@@ -1,0 +1,6 @@
+# ninja log v5
+2	1225	7415526954703777	CMakeFiles/UltraPong.dir/UltraPong.cpp.obj	9ae4e79fe76d1e96
+1237	1950	7415526960957361	UltraPong.exe	7701b0f58c10f438
+3	433	7415527322070198	build.ninja	f2b47b7cba9418fc
+7	1638	7415527334173679	CMakeFiles/UltraPong.dir/UltraPong.cpp.obj	37c944f0ea6779da
+1639	2318	7415527338873312	UltraPong.exe	7701b0f58c10f438

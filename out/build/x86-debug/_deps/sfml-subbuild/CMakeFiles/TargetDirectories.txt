@@ -1,0 +1,3 @@
+D:/c++++/UltraPong/out/build/x86-debug/_deps/sfml-subbuild/CMakeFiles/sfml-populate.dir
+D:/c++++/UltraPong/out/build/x86-debug/_deps/sfml-subbuild/CMakeFiles/edit_cache.dir
+D:/c++++/UltraPong/out/build/x86-debug/_deps/sfml-subbuild/CMakeFiles/rebuild_cache.dir
