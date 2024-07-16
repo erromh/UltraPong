@@ -14,7 +14,11 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app2"
+    "\\src\\app2",
+    "\\src\\Ball",
+    "\\src\\Ball\\include",
+    "\\src\\CollisionHandler"
   ],
+  "SelectedNode": "\\src\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }

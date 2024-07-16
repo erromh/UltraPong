@@ -83,3 +83,11 @@ D:/c++++/UltraPong/out/build/x86-debug/src/app2/CMakeFiles/rebuild_cache.dir
 D:/c++++/UltraPong/out/build/x86-debug/src/app2/CMakeFiles/list_install_components.dir
 D:/c++++/UltraPong/out/build/x86-debug/src/app2/CMakeFiles/install.dir
 D:/c++++/UltraPong/out/build/x86-debug/src/app2/CMakeFiles/install/local.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Ball/CMakeFiles/Ball.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Ball/CMakeFiles/package.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Ball/CMakeFiles/package_source.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Ball/CMakeFiles/edit_cache.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Ball/CMakeFiles/rebuild_cache.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Ball/CMakeFiles/list_install_components.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Ball/CMakeFiles/install.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Ball/CMakeFiles/install/local.dir

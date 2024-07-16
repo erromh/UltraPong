@@ -10,5 +10,13 @@ FetchContent_Declare(SFML
     GIT_TAG 2.6.x)
 FetchContent_MakeAvailable(SFML)
 
+if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    message(STATUS "Shalom, Linux")
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
+    message("Shalom, win32")
+else()
+    message(STATUS "This is ${CMAKE_SYSTEM_NAME} speaking.")
+endif()
+
 add_subdirectory(src)
 
