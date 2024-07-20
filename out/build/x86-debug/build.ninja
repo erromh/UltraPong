@@ -1883,12 +1883,12 @@ build _deps\sfml-build\src\SFML\Audio\install\local: phony _deps\sfml-build\src\
 #############################################
 # Order-only phony target for UitraPong
 
-build cmake_object_order_depends_target_UitraPong: phony || cmake_object_order_depends_target_Ball cmake_object_order_depends_target_app2 cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window
+build cmake_object_order_depends_target_UitraPong: phony || cmake_object_order_depends_target_Ball cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window
 
 build src\CMakeFiles\UitraPong.dir\main.cpp.obj: CXX_COMPILER__UitraPong_unscanned_Debug D$:\c++++\UltraPong\src\main.cpp || cmake_object_order_depends_target_UitraPong
   DEFINES = -DSFML_STATIC
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -ID:\c++++\UltraPong\out\build\x86-debug\_deps\sfml-src\include -ID:\c++++\UltraPong\src\app2 -ID:\c++++\UltraPong\src\Ball
+  INCLUDES = -ID:\c++++\UltraPong\out\build\x86-debug\_deps\sfml-src\include -ID:\c++++\UltraPong\src\Ball
   OBJECT_DIR = src\CMakeFiles\UitraPong.dir
   OBJECT_FILE_DIR = src\CMakeFiles\UitraPong.dir
   TARGET_COMPILE_PDB = src\CMakeFiles\UitraPong.dir\
@@ -1902,10 +1902,10 @@ build src\CMakeFiles\UitraPong.dir\main.cpp.obj: CXX_COMPILER__UitraPong_unscann
 #############################################
 # Link the executable bin\UitraPong.exe
 
-build bin\UitraPong.exe: CXX_EXECUTABLE_LINKER__UitraPong_Debug src\CMakeFiles\UitraPong.dir\main.cpp.obj | _deps\sfml-build\lib\sfml-graphics-s-d.lib src\app2\app2.lib src\Ball\Ball.lib _deps\sfml-build\lib\sfml-graphics-s-d.lib _deps\sfml-build\lib\sfml-window-s-d.lib _deps\sfml-build\lib\sfml-system-s-d.lib _deps\sfml-src\extlibs\libs-msvc-universal\x86\freetype.lib || _deps\sfml-build\lib\sfml-graphics-s-d.lib _deps\sfml-build\lib\sfml-system-s-d.lib _deps\sfml-build\lib\sfml-window-s-d.lib src\Ball\Ball.lib src\app2\app2.lib
+build bin\UitraPong.exe: CXX_EXECUTABLE_LINKER__UitraPong_Debug src\CMakeFiles\UitraPong.dir\main.cpp.obj | _deps\sfml-build\lib\sfml-graphics-s-d.lib src\Ball\Ball.lib _deps\sfml-build\lib\sfml-graphics-s-d.lib _deps\sfml-build\lib\sfml-window-s-d.lib _deps\sfml-build\lib\sfml-system-s-d.lib _deps\sfml-src\extlibs\libs-msvc-universal\x86\freetype.lib || _deps\sfml-build\lib\sfml-graphics-s-d.lib _deps\sfml-build\lib\sfml-system-s-d.lib _deps\sfml-build\lib\sfml-window-s-d.lib src\Ball\Ball.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = _deps\sfml-build\lib\sfml-graphics-s-d.lib  src\app2\app2.lib  src\Ball\Ball.lib  _deps\sfml-build\lib\sfml-graphics-s-d.lib  _deps\sfml-build\lib\sfml-window-s-d.lib  _deps\sfml-build\lib\sfml-system-s-d.lib  opengl32.lib  winmm.lib  gdi32.lib  _deps\sfml-src\extlibs\libs-msvc-universal\x86\freetype.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = _deps\sfml-build\lib\sfml-graphics-s-d.lib  src\Ball\Ball.lib  _deps\sfml-build\lib\sfml-graphics-s-d.lib  _deps\sfml-build\lib\sfml-window-s-d.lib  _deps\sfml-build\lib\sfml-system-s-d.lib  opengl32.lib  winmm.lib  gdi32.lib  _deps\sfml-src\extlibs\libs-msvc-universal\x86\freetype.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = src\CMakeFiles\UitraPong.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -1990,124 +1990,6 @@ build src\CMakeFiles\install\local.util: CUSTOM_COMMAND src\all
   restat = 1
 
 build src\install\local: phony src\CMakeFiles\install\local.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# D:/c++++/UltraPong/src/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target app2
-
-
-#############################################
-# Order-only phony target for app2
-
-build cmake_object_order_depends_target_app2: phony || cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window
-
-build src\app2\CMakeFiles\app2.dir\MoveSquare.cpp.obj: CXX_COMPILER__app2_unscanned_Debug D$:\c++++\UltraPong\src\app2\MoveSquare.cpp || cmake_object_order_depends_target_app2
-  DEFINES = -DSFML_STATIC
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -ID:\c++++\UltraPong\src\app2 -ID:\c++++\UltraPong\out\build\x86-debug\_deps\sfml-src\include
-  OBJECT_DIR = src\app2\CMakeFiles\app2.dir
-  OBJECT_FILE_DIR = src\app2\CMakeFiles\app2.dir
-  TARGET_COMPILE_PDB = src\app2\CMakeFiles\app2.dir\app2.pdb
-  TARGET_PDB = src\app2\app2.pdb
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target app2
-
-
-#############################################
-# Link the static library src\app2\app2.lib
-
-build src\app2\app2.lib: CXX_STATIC_LIBRARY_LINKER__app2_Debug src\app2\CMakeFiles\app2.dir\MoveSquare.cpp.obj || _deps\sfml-build\lib\sfml-graphics-s-d.lib _deps\sfml-build\lib\sfml-system-s-d.lib _deps\sfml-build\lib\sfml-window-s-d.lib
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  LINK_FLAGS = /machine:X86
-  OBJECT_DIR = src\app2\CMakeFiles\app2.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = src\app2\CMakeFiles\app2.dir\app2.pdb
-  TARGET_FILE = src\app2\app2.lib
-  TARGET_PDB = src\app2\app2.pdb
-
-
-#############################################
-# Utility command for package
-
-build src\app2\CMakeFiles\package.util: CUSTOM_COMMAND src\app2\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\c++++\UltraPong\out\build\x86-debug && "D:\visual studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cpack.exe" --config ./CPackConfig.cmake"
-  DESC = Run CPack packaging tool...
-  pool = console
-  restat = 1
-
-build src\app2\package: phony src\app2\CMakeFiles\package.util
-
-
-#############################################
-# Utility command for package_source
-
-build src\app2\CMakeFiles\package_source.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\c++++\UltraPong\out\build\x86-debug && "D:\visual studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake D:/c++++/UltraPong/out/build/x86-debug/CPackSourceConfig.cmake"
-  DESC = Run CPack packaging tool for source...
-  pool = console
-  restat = 1
-
-build src\app2\package_source: phony src\app2\CMakeFiles\package_source.util
-
-
-#############################################
-# Utility command for edit_cache
-
-build src\app2\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\c++++\UltraPong\out\build\x86-debug\src\app2 && "D:\visual studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build src\app2\edit_cache: phony src\app2\CMakeFiles\edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build src\app2\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\c++++\UltraPong\out\build\x86-debug\src\app2 && "D:\visual studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\c++++\UltraPong -BD:\c++++\UltraPong\out\build\x86-debug"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build src\app2\rebuild_cache: phony src\app2\CMakeFiles\rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build src\app2\list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build src\app2\CMakeFiles\install.util: CUSTOM_COMMAND src\app2\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\c++++\UltraPong\out\build\x86-debug\src\app2 && "D:\visual studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build src\app2\install: phony src\app2\CMakeFiles\install.util
-
-
-#############################################
-# Utility command for install/local
-
-build src\app2\CMakeFiles\install\local.util: CUSTOM_COMMAND src\app2\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\c++++\UltraPong\out\build\x86-debug\src\app2 && "D:\visual studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build src\app2\install\local: phony src\app2\CMakeFiles\install\local.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -2238,10 +2120,6 @@ build UitraPong: phony bin\UitraPong.exe
 
 build UitraPong.exe: phony bin\UitraPong.exe
 
-build app2: phony src\app2\app2.lib
-
-build app2.lib: phony src\app2\app2.lib
-
 build sfml-audio: phony _deps\sfml-build\lib\sfml-audio-s-d.lib
 
 build sfml-audio-s-d.lib: phony _deps\sfml-build\lib\sfml-audio-s-d.lib
@@ -2337,7 +2215,7 @@ build _deps\sfml-build\src\SFML\Window\all: phony _deps\sfml-build\lib\sfml-wind
 #############################################
 # Folder: D:/c++++/UltraPong/out/build/x86-debug/src
 
-build src\all: phony bin\UitraPong.exe src\app2\all src\Ball\all
+build src\all: phony bin\UitraPong.exe src\Ball\all
 
 # =============================================================================
 
@@ -2347,27 +2225,20 @@ build src\all: phony bin\UitraPong.exe src\app2\all src\Ball\all
 build src\Ball\all: phony src\Ball\Ball.lib
 
 # =============================================================================
-
-#############################################
-# Folder: D:/c++++/UltraPong/out/build/x86-debug/src/app2
-
-build src\app2\all: phony src\app2\app2.lib
-
-# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeCXXCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeRCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake D$:\c++++\UltraPong\CMakeLists.txt D$:\c++++\UltraPong\src\Ball\CMakeLists.txt D$:\c++++\UltraPong\src\CMakeLists.txt D$:\c++++\UltraPong\src\app2\CMakeLists.txt D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CPack.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CPackComponent.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindGit.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindOpenAL.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindOpenGL.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Templates\CPackConfig.cmake.in _deps\sfml-src\CMakeLists.txt _deps\sfml-src\cmake\CompilerOptionsOverride.cmake _deps\sfml-src\cmake\CompilerWarnings.cmake _deps\sfml-src\cmake\Config.cmake _deps\sfml-src\cmake\Macros.cmake _deps\sfml-src\cmake\Modules\FindFLAC.cmake _deps\sfml-src\cmake\Modules\FindFreetype.cmake _deps\sfml-src\cmake\Modules\FindVORBIS.cmake _deps\sfml-src\cmake\SFMLConfig.cmake.in _deps\sfml-src\cmake\SFMLConfigDependencies.cmake.in _deps\sfml-src\src\SFML\Audio\CMakeLists.txt _deps\sfml-src\src\SFML\CMakeLists.txt _deps\sfml-src\src\SFML\Graphics\CMakeLists.txt _deps\sfml-src\src\SFML\Main\CMakeLists.txt _deps\sfml-src\src\SFML\Network\CMakeLists.txt _deps\sfml-src\src\SFML\System\CMakeLists.txt _deps\sfml-src\src\SFML\Window\CMakeLists.txt
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeCXXCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeRCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake D$:\c++++\UltraPong\CMakeLists.txt D$:\c++++\UltraPong\src\Ball\CMakeLists.txt D$:\c++++\UltraPong\src\CMakeLists.txt D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CPack.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CPackComponent.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindGit.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindOpenAL.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindOpenGL.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Templates\CPackConfig.cmake.in _deps\sfml-src\CMakeLists.txt _deps\sfml-src\cmake\CompilerOptionsOverride.cmake _deps\sfml-src\cmake\CompilerWarnings.cmake _deps\sfml-src\cmake\Config.cmake _deps\sfml-src\cmake\Macros.cmake _deps\sfml-src\cmake\Modules\FindFLAC.cmake _deps\sfml-src\cmake\Modules\FindFreetype.cmake _deps\sfml-src\cmake\Modules\FindVORBIS.cmake _deps\sfml-src\cmake\SFMLConfig.cmake.in _deps\sfml-src\cmake\SFMLConfigDependencies.cmake.in _deps\sfml-src\src\SFML\Audio\CMakeLists.txt _deps\sfml-src\src\SFML\CMakeLists.txt _deps\sfml-src\src\SFML\Graphics\CMakeLists.txt _deps\sfml-src\src\SFML\Main\CMakeLists.txt _deps\sfml-src\src\SFML\Network\CMakeLists.txt _deps\sfml-src\src\SFML\System\CMakeLists.txt _deps\sfml-src\src\SFML\Window\CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeCXXCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeRCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake D$:\c++++\UltraPong\CMakeLists.txt D$:\c++++\UltraPong\src\Ball\CMakeLists.txt D$:\c++++\UltraPong\src\CMakeLists.txt D$:\c++++\UltraPong\src\app2\CMakeLists.txt D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CPack.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CPackComponent.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindGit.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindOpenAL.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindOpenGL.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Templates\CPackConfig.cmake.in _deps\sfml-src\CMakeLists.txt _deps\sfml-src\cmake\CompilerOptionsOverride.cmake _deps\sfml-src\cmake\CompilerWarnings.cmake _deps\sfml-src\cmake\Config.cmake _deps\sfml-src\cmake\Macros.cmake _deps\sfml-src\cmake\Modules\FindFLAC.cmake _deps\sfml-src\cmake\Modules\FindFreetype.cmake _deps\sfml-src\cmake\Modules\FindVORBIS.cmake _deps\sfml-src\cmake\SFMLConfig.cmake.in _deps\sfml-src\cmake\SFMLConfigDependencies.cmake.in _deps\sfml-src\src\SFML\Audio\CMakeLists.txt _deps\sfml-src\src\SFML\CMakeLists.txt _deps\sfml-src\src\SFML\Graphics\CMakeLists.txt _deps\sfml-src\src\SFML\Main\CMakeLists.txt _deps\sfml-src\src\SFML\Network\CMakeLists.txt _deps\sfml-src\src\SFML\System\CMakeLists.txt _deps\sfml-src\src\SFML\Window\CMakeLists.txt: phony
+build CMakeCache.txt CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeCXXCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeRCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake D$:\c++++\UltraPong\CMakeLists.txt D$:\c++++\UltraPong\src\Ball\CMakeLists.txt D$:\c++++\UltraPong\src\CMakeLists.txt D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CPack.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CPackComponent.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindGit.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindOpenAL.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindOpenGL.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake D$:\visual$ studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Templates\CPackConfig.cmake.in _deps\sfml-src\CMakeLists.txt _deps\sfml-src\cmake\CompilerOptionsOverride.cmake _deps\sfml-src\cmake\CompilerWarnings.cmake _deps\sfml-src\cmake\Config.cmake _deps\sfml-src\cmake\Macros.cmake _deps\sfml-src\cmake\Modules\FindFLAC.cmake _deps\sfml-src\cmake\Modules\FindFreetype.cmake _deps\sfml-src\cmake\Modules\FindVORBIS.cmake _deps\sfml-src\cmake\SFMLConfig.cmake.in _deps\sfml-src\cmake\SFMLConfigDependencies.cmake.in _deps\sfml-src\src\SFML\Audio\CMakeLists.txt _deps\sfml-src\src\SFML\CMakeLists.txt _deps\sfml-src\src\SFML\Graphics\CMakeLists.txt _deps\sfml-src\src\SFML\Main\CMakeLists.txt _deps\sfml-src\src\SFML\Network\CMakeLists.txt _deps\sfml-src\src\SFML\System\CMakeLists.txt _deps\sfml-src\src\SFML\Window\CMakeLists.txt: phony
 
 
 #############################################

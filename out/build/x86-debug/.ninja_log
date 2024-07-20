@@ -1,9 +1,9 @@
 # ninja log v5
 10961	11489	7428469162429606	_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/BlendMode.cpp.obj	79c8c9bda1faa02a
 20	1942	7428469066792879	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.obj	af9c80bc97180f28
+17386	19125	7428469238517284	_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.obj	59a5339e0e5b312c
 8633	12033	7428469167645454	_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.obj	e7b1175613c475ec
 30	1971	7428469067175337	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.obj	b718745eb672a29a
-17386	19125	7428469238517284	_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.obj	59a5339e0e5b312c
 3747	5800	7428469105294181	_deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Mouse.cpp.obj	996d534589e6a73a
 69	1963	7428469067165356	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.obj	dad4e767aed05e88
 79	1982	7428469067228566	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.obj	6f05ad7b712174fc
@@ -52,7 +52,7 @@
 3550	6326	7428469110655642	_deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/JoystickManager.cpp.obj	c28da7a4bb6b07d3
 8125	11296	7428469159940779	_deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/WglContext.cpp.obj	f88c76e8a72e3d9c
 5099	6578	7428469112727099	_deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Vulkan.cpp.obj	92a46ce5ce693742
-20712	21872	7428469262397077	bin/UitraPong.exe	b466223ac9bf338d
+1043	1677	7428484452427351	bin/UitraPong.exe	a45971492f2b5255
 3415	7446	7428469115224227	_deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/GlContext.cpp.obj	efb0f70379d1de48
 6326	7455	7428469122041714	_deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/SensorImpl.cpp.obj	63b9b2416255b7ec
 13265	13918	7428469184727796	_deps/sfml-build/lib/sfml-network-s-d.lib	6114e37ccef5a602
@@ -72,7 +72,7 @@
 9906	12584	7428469173243462	_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.obj	9a741b1e4357b061
 11966	13750	7428469184563202	_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp.obj	1b5c929b9e02efbd
 10813	13265	7428469180023591	_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.obj	6c8b5f670274877d
-23	1040	7428483011183756	src/CMakeFiles/UitraPong.dir/main.cpp.obj	824a5feec6082373
+17	1043	7428484447720741	src/CMakeFiles/UitraPong.dir/main.cpp.obj	1bd9519b29b7ef51
 11980	13703	7428469184274331	_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.obj	bbd52ed1fc876973
 11188	14147	7428469188848576	_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.obj	6bac2374f7e5710e
 14022	15384	7428469201274206	_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.obj	1860e943d110e586
@@ -112,15 +112,11 @@
 18150	19716	7428469244660959	_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterFlac.cpp.obj	d1888bc98b923c11
 18265	19847	7428469246021632	_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterOgg.cpp.obj	578135ccd3151cb8
 18344	19882	7428469246391641	_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.obj	70fd9d125a600f14
-1058	1259	7428480284979842	src/Ball/Ball.lib	a6954f209b7750
+36	143	7428483926165503	src/Ball/Ball.lib	a6954f209b7750
 19883	20050	7428469247294923	_deps/sfml-build/lib/sfml-audio-s-d.lib	f63c3082b410ef40
 18802	20474	7428469252164662	src/app2/CMakeFiles/app2.dir/MoveSquare.cpp.obj	7c74544b77d0c41
 20475	20712	7428469253964639	src/app2/app2.lib	8a455dde21823de5
-33	7741	7428483917522740	build.ninja	91fecf179e102a89
+14	8666	7431987080738449	build.ninja	91fecf179e102a89
 25	1174	7428483198616327	src/Ball/CMakeFiles/Ball.dir/Ball.cpp.obj	b96bfea81a9c58a2
-14	8666	7428483917522740	build.ninja	91fecf179e102a89
-36	143	7428483926165503	src/Ball/Ball.lib	a6954f209b7750
-30	1520	7428483940072724	src/CMakeFiles/UitraPong.dir/main.cpp.obj	1bd9519b29b7ef51
-1521	2596	7428483946688576	bin/UitraPong.exe	a45971492f2b5255
-17	1043	7428484447720741	src/CMakeFiles/UitraPong.dir/main.cpp.obj	1bd9519b29b7ef51
-1043	1677	7428484452427351	bin/UitraPong.exe	a45971492f2b5255
+38	6948	7431987240743207	src/CMakeFiles/UitraPong.dir/main.cpp.obj	ade18429bb777ca8
+6949	10954	7431987276936706	bin/UitraPong.exe	765d0601901af567
