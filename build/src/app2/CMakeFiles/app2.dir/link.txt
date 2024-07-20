@@ -1,0 +1,2 @@
+/usr/bin/ar qc libapp2.a CMakeFiles/app2.dir/MoveSquare.cpp.o
+/usr/bin/ranlib libapp2.a

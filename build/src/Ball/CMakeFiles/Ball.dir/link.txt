@@ -1,0 +1,2 @@
+/usr/bin/ar qc libBall.a CMakeFiles/Ball.dir/Ball.cpp.o
+/usr/bin/ranlib libBall.a

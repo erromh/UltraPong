@@ -1,9 +1,8 @@
 ﻿#include <SFML/Graphics.hpp>
 #include <iostream>
+#include <string>
 
 #include "Ball/Ball.h"
-
-//
 
 int main()
 {
