@@ -6,7 +6,7 @@ target_sources(Ball
 		Ball.cpp
 
 	PUBLIC
-		${CMAKE_CURRENT_LIST_DIR}/Ball.h
+		"${CMAKE_CURRENT_LIST_DIR}/include/Ball.h"
 )
 
 target_include_directories(Ball

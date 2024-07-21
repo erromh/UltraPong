@@ -10,6 +10,8 @@ FetchContent_Declare(SFML
     GIT_TAG 2.6.x)
 FetchContent_MakeAvailable(SFML)
 
+include_directories(${CMAKE_SOURCE_DIR}/global_var)
+
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
     message(STATUS "Shalom, Linux")
 elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
