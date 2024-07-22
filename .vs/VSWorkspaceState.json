@@ -13,15 +13,13 @@
   },
   "ExpandedNodes": [
     "",
-    "\\build\\src\\Ball\\CMakeFiles",
     "\\global_var",
     "\\src",
-    "\\src\\Ball",
-    "\\src\\Ball\\include",
-    "\\src\\CollisionHandler",
+    "\\src\\Command_Interface",
+    "\\src\\Command_Interface\\include",
     "\\src\\Players",
     "\\src\\Players\\include"
   ],
-  "SelectedNode": "\\global_var\\GlobalVaribles.h",
+  "SelectedNode": "\\src\\Players\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }

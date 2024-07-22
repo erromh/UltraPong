@@ -8,7 +8,7 @@
 
 int main()
 {
-    sf::RenderWindow win(sf::VideoMode(1700, 900), "Ultra Pong", sf::Style::Default);
+    sf::RenderWindow win(sf::VideoMode(winWeight, winHeight), "Ultra Pong", sf::Style::Default);
 
     sf::Color color(0, 0, 255);
 

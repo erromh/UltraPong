@@ -4,5 +4,5 @@ struct WindowSize
 {
 };
 
-// float winSizeX = 1700;
-// float winSizeY = 900;
+static float winWeight = 1700;
+static float winHeight = 900;

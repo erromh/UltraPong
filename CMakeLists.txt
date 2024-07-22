@@ -12,6 +12,9 @@ FetchContent_MakeAvailable(SFML)
 
 include_directories(${CMAKE_SOURCE_DIR}/global_var)
 
+# add_library(Command_Interface INTERFACE)
+# target_include_directories(Command_Interface INTERFACE ${CMAKE_SOURCE_DIR}/Command_Interface)
+
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
     message(STATUS "Shalom, Linux")
 elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")

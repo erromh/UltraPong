@@ -1,7 +1,6 @@
 add_library(Players "")
 
 target_sources(Players
-	
 	PRIVATE
 		Players.cpp
 
@@ -17,4 +16,5 @@ target_include_directories(Players
 target_link_libraries(Players
 	PRIVATE
 		sfml-graphics
+		Command_Interface
 )
