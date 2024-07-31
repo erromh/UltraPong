@@ -338,6 +338,12 @@ OPENGL_gl_LIBRARY:STRING=opengl32
 OPENGL_glu_LIBRARY:STRING=glu32
 
 //Dependencies for the target
+PlayerMoveDownCommand_LIB_DEPENDS:STATIC=general;sfml-graphics;general;Players;
+
+//Dependencies for the target
+PlayerMoveUpCommand_LIB_DEPENDS:STATIC=general;sfml-graphics;general;Players;
+
+//Dependencies for the target
 Players_LIB_DEPENDS:STATIC=general;sfml-graphics;general;Command_Interface;
 
 //Value Computed by CMake
@@ -555,7 +561,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

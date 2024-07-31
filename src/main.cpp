@@ -4,8 +4,9 @@
 #include <string>
 
 #include "Ball/include/Ball.h"
-#include "Players/include/Players.h"
+#include "PlayerMoveDownCommand/include/PlayerMoveDownCommand.h"
 #include "PlayerMoveUpCommand/include/PlayerMoveUpCommand.h"
+#include "Players/include/Players.h"
 
 int main()
 {
@@ -14,13 +15,20 @@ int main()
     sf::Color color(0, 0, 255);
 
     float ballX = 300, ballY = 100;
+
     float plX = 0, plY = 350;
+    float pl2X = 1670, pl2Y = 350;
 
     Ball ball1(15, ballX, ballY);
+
     Players player1(plX, plY);
+    Players player2(pl2X, pl2Y);
 
-    PlayerMoveUpCommand upCommand(&player1);
+    PlayerMoveUpCommand upCommandPl1(&player1);
+    PlayerMoveUpCommand upCommandPl2(&player2);
 
+    PlayerMoveDownCommand downCommand1(&player1);
+    PlayerMoveDownCommand downCommand2(&player2);
 
     while (win.isOpen())
     {
@@ -38,15 +46,33 @@ int main()
                 win.close();
             }
 
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
             {
-                upCommand.execute()
+                upCommandPl1.execute();
+            }
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+            {
+                downCommand1.execute();
+            }
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+            {
+                upCommandPl2.execute();
+            }
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+            {
+                downCommand2.execute();
             }
         }
 
         win.clear(color);
+
         win.draw(ball1.getShape());
         win.draw(player1.getPlayerShape());
+        win.draw(player2.getPlayerShape());
+
         win.display();
     }
 

@@ -1,6 +1,7 @@
 #pragma once
 #include "Command.h"
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
 class Players
 {
@@ -8,7 +9,7 @@ class Players
     float _x;
     float _y;
 
-    sf::RectangleShape playersShape;
+    sf::RectangleShape _playersShape;
 
   public:
     Players(float &x, float &y);
@@ -18,4 +19,6 @@ class Players
     sf::RectangleShape getPlayerShape();
 
     void moveUp();
+
+    void moveDown();
 };
