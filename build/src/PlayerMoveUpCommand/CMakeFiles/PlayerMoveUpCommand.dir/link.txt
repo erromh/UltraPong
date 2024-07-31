@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPlayerMoveUpCommand.a CMakeFiles/PlayerMoveUpCommand.dir/PlayerMoveUpCommand.cpp.o
+/usr/bin/ranlib libPlayerMoveUpCommand.a

@@ -16,4 +16,6 @@ class Players
     void handleInput(Command *moveUp, Command *moveDown);
 
     sf::RectangleShape getPlayerShape();
+
+    void moveUp();
 };

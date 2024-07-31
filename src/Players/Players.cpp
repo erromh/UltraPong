@@ -13,3 +13,8 @@ sf::RectangleShape Players::getPlayerShape()
 {
     return playersShape;
 }
+
+void Players::moveUp()
+{
+    playersShape.move(0, -200.0f);
+}

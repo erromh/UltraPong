@@ -1,7 +1,7 @@
 src/Ball/CMakeFiles/Ball.dir/Ball.cpp.o: \
  /home/errom/projects/myprojects/UltraPong/src/Ball/Ball.cpp \
  /usr/include/stdc-predef.h \
- /home/errom/projects/myprojects/UltraPong/src/Ball/Ball.h \
+ /home/errom/projects/myprojects/UltraPong/src/Ball/include/Ball.h \
  /home/errom/projects/myprojects/UltraPong/build/_deps/sfml-src/include/SFML/Graphics.hpp \
  /home/errom/projects/myprojects/UltraPong/build/_deps/sfml-src/include/SFML/Window.hpp \
  /home/errom/projects/myprojects/UltraPong/build/_deps/sfml-src/include/SFML/System.hpp \

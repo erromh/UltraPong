@@ -94,6 +94,9 @@ bin/UitraPong: src/CMakeFiles/UitraPong.dir/main.cpp.o
 bin/UitraPong: src/CMakeFiles/UitraPong.dir/build.make
 bin/UitraPong: _deps/sfml-build/lib/libsfml-graphics.a
 bin/UitraPong: src/Ball/libBall.a
+bin/UitraPong: src/Players/libPlayers.a
+bin/UitraPong: src/PlayerMoveUpCommand/libPlayerMoveUpCommand.a
+bin/UitraPong: src/Players/libPlayers.a
 bin/UitraPong: _deps/sfml-build/lib/libsfml-graphics.a
 bin/UitraPong: _deps/sfml-build/lib/libsfml-window.a
 bin/UitraPong: /usr/lib/x86_64-linux-gnu/libX11.so

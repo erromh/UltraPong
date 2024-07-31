@@ -1,6 +1,7 @@
 src/CMakeFiles/UitraPong.dir/main.cpp.o: \
  /home/errom/projects/myprojects/UltraPong/src/main.cpp \
  /usr/include/stdc-predef.h \
+ /home/errom/projects/myprojects/UltraPong/global_var/GlobalVaribles.h \
  /home/errom/projects/myprojects/UltraPong/build/_deps/sfml-src/include/SFML/Graphics.hpp \
  /home/errom/projects/myprojects/UltraPong/build/_deps/sfml-src/include/SFML/Window.hpp \
  /home/errom/projects/myprojects/UltraPong/build/_deps/sfml-src/include/SFML/System.hpp \
@@ -261,4 +262,6 @@ src/CMakeFiles/UitraPong.dir/main.cpp.o: \
  /home/errom/projects/myprojects/UltraPong/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/errom/projects/myprojects/UltraPong/src/Ball/Ball.h
+ /home/errom/projects/myprojects/UltraPong/src/Ball/include/Ball.h \
+ /home/errom/projects/myprojects/UltraPong/src/Players/include/Players.h \
+ /home/errom/projects/myprojects/UltraPong/src/Command_Interface/include/Command.h

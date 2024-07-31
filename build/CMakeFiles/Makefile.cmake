@@ -36,6 +36,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/sfml-src/tools/pkg-config/sfml-window.pc.in"
   "../src/Ball/CMakeLists.txt"
   "../src/CMakeLists.txt"
+  "../src/Command_Interface/CMakeLists.txt"
+  "../src/PlayerMoveUpCommand/CMakeLists.txt"
+  "../src/Players/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
@@ -103,6 +106,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/sfml-build/src/SFML/Audio/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/Ball/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/Players/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/Command_Interface/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/PlayerMoveUpCommand/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -114,4 +120,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/DependInfo.cmake"
   "src/CMakeFiles/UitraPong.dir/DependInfo.cmake"
   "src/Ball/CMakeFiles/Ball.dir/DependInfo.cmake"
+  "src/Players/CMakeFiles/Players.dir/DependInfo.cmake"
+  "src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/DependInfo.cmake"
   )

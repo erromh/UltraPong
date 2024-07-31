@@ -200,15 +200,24 @@ _deps/sfml-build/src/SFML/Window/clean: _deps/sfml-build/src/SFML/Window/CMakeFi
 # Recursive "all" directory target.
 src/all: src/CMakeFiles/UitraPong.dir/all
 src/all: src/Ball/all
+src/all: src/Players/all
+src/all: src/Command_Interface/all
+src/all: src/PlayerMoveUpCommand/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
 src/preinstall: src/Ball/preinstall
+src/preinstall: src/Players/preinstall
+src/preinstall: src/Command_Interface/preinstall
+src/preinstall: src/PlayerMoveUpCommand/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/UitraPong.dir/clean
 src/clean: src/Ball/clean
+src/clean: src/Players/clean
+src/clean: src/Command_Interface/clean
+src/clean: src/PlayerMoveUpCommand/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -227,18 +236,63 @@ src/Ball/clean: src/Ball/CMakeFiles/Ball.dir/clean
 .PHONY : src/Ball/clean
 
 #=============================================================================
+# Directory level rules for directory src/Command_Interface
+
+# Recursive "all" directory target.
+src/Command_Interface/all:
+.PHONY : src/Command_Interface/all
+
+# Recursive "preinstall" directory target.
+src/Command_Interface/preinstall:
+.PHONY : src/Command_Interface/preinstall
+
+# Recursive "clean" directory target.
+src/Command_Interface/clean:
+.PHONY : src/Command_Interface/clean
+
+#=============================================================================
+# Directory level rules for directory src/PlayerMoveUpCommand
+
+# Recursive "all" directory target.
+src/PlayerMoveUpCommand/all: src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/all
+.PHONY : src/PlayerMoveUpCommand/all
+
+# Recursive "preinstall" directory target.
+src/PlayerMoveUpCommand/preinstall:
+.PHONY : src/PlayerMoveUpCommand/preinstall
+
+# Recursive "clean" directory target.
+src/PlayerMoveUpCommand/clean: src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/clean
+.PHONY : src/PlayerMoveUpCommand/clean
+
+#=============================================================================
+# Directory level rules for directory src/Players
+
+# Recursive "all" directory target.
+src/Players/all: src/Players/CMakeFiles/Players.dir/all
+.PHONY : src/Players/all
+
+# Recursive "preinstall" directory target.
+src/Players/preinstall:
+.PHONY : src/Players/preinstall
+
+# Recursive "clean" directory target.
+src/Players/clean: src/Players/CMakeFiles/Players.dir/clean
+.PHONY : src/Players/clean
+
+#=============================================================================
 # Target rules for target _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
 
 # All Build rule for target.
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=59,60,61,62,63,64,65,66,67,68,69,70,71,72,73 "Built target sfml-system"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=61,62,63,64,65,66,67,68,69,70,71,72,73,74 "Built target sfml-system"
 .PHONY : _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 0
 .PHONY : _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/rule
@@ -259,12 +313,12 @@ _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/clean:
 _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/build.make _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/build.make _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target sfml-window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target sfml-window"
 .PHONY : _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 40
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 0
 .PHONY : _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/rule
@@ -285,7 +339,7 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/clean:
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=50,51,52,53,54,55,56,57,58 "Built target sfml-network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=51,52,53,54,55,56,57,58,59,60 "Built target sfml-network"
 .PHONY : _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/all
 
 # Build rule for subdir invocation for target.
@@ -312,12 +366,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all: _deps/sfml-
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all: _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49 "Built target sfml-graphics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target sfml-graphics"
 .PHONY : _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 69
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 65
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 0
 .PHONY : _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/rule
@@ -338,12 +392,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/clean:
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Built target sfml-audio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target sfml-audio"
 .PHONY : _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 33
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 0
 .PHONY : _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/rule
@@ -365,14 +419,16 @@ src/CMakeFiles/UitraPong.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sf
 src/CMakeFiles/UitraPong.dir/all: _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all
 src/CMakeFiles/UitraPong.dir/all: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 src/CMakeFiles/UitraPong.dir/all: src/Ball/CMakeFiles/Ball.dir/all
+src/CMakeFiles/UitraPong.dir/all: src/Players/CMakeFiles/Players.dir/all
+src/CMakeFiles/UitraPong.dir/all: src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/UitraPong.dir/build.make src/CMakeFiles/UitraPong.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/UitraPong.dir/build.make src/CMakeFiles/UitraPong.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=2,3 "Built target UitraPong"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=6 "Built target UitraPong"
 .PHONY : src/CMakeFiles/UitraPong.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/UitraPong.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 71
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/UitraPong.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/UitraPong.dir/rule
@@ -400,7 +456,7 @@ src/Ball/CMakeFiles/Ball.dir/all: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 src/Ball/CMakeFiles/Ball.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 70
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 66
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Ball/CMakeFiles/Ball.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 0
 .PHONY : src/Ball/CMakeFiles/Ball.dir/rule
@@ -413,6 +469,63 @@ Ball: src/Ball/CMakeFiles/Ball.dir/rule
 src/Ball/CMakeFiles/Ball.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/Ball/CMakeFiles/Ball.dir/build.make src/Ball/CMakeFiles/Ball.dir/clean
 .PHONY : src/Ball/CMakeFiles/Ball.dir/clean
+
+#=============================================================================
+# Target rules for target src/Players/CMakeFiles/Players.dir
+
+# All Build rule for target.
+src/Players/CMakeFiles/Players.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
+src/Players/CMakeFiles/Players.dir/all: _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all
+src/Players/CMakeFiles/Players.dir/all: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
+	$(MAKE) $(MAKESILENT) -f src/Players/CMakeFiles/Players.dir/build.make src/Players/CMakeFiles/Players.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Players/CMakeFiles/Players.dir/build.make src/Players/CMakeFiles/Players.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=4,5 "Built target Players"
+.PHONY : src/Players/CMakeFiles/Players.dir/all
+
+# Build rule for subdir invocation for target.
+src/Players/CMakeFiles/Players.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 67
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Players/CMakeFiles/Players.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 0
+.PHONY : src/Players/CMakeFiles/Players.dir/rule
+
+# Convenience name for target.
+Players: src/Players/CMakeFiles/Players.dir/rule
+.PHONY : Players
+
+# clean rule for target.
+src/Players/CMakeFiles/Players.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Players/CMakeFiles/Players.dir/build.make src/Players/CMakeFiles/Players.dir/clean
+.PHONY : src/Players/CMakeFiles/Players.dir/clean
+
+#=============================================================================
+# Target rules for target src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir
+
+# All Build rule for target.
+src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
+src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/all: _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all
+src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/all: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
+src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/all: src/Players/CMakeFiles/Players.dir/all
+	$(MAKE) $(MAKESILENT) -f src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/build.make src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/build.make src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/errom/projects/myprojects/UltraPong/build/CMakeFiles --progress-num=2,3 "Built target PlayerMoveUpCommand"
+.PHONY : src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/all
+
+# Build rule for subdir invocation for target.
+src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 69
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/errom/projects/myprojects/UltraPong/build/CMakeFiles 0
+.PHONY : src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/rule
+
+# Convenience name for target.
+PlayerMoveUpCommand: src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/rule
+.PHONY : PlayerMoveUpCommand
+
+# clean rule for target.
+src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/build.make src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/clean
+.PHONY : src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

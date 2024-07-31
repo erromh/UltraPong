@@ -45,6 +45,9 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/errom/projects/myprojects/UltraPong/build/src/Ball/cmake_install.cmake")
+  include("/home/errom/projects/myprojects/UltraPong/build/src/Players/cmake_install.cmake")
+  include("/home/errom/projects/myprojects/UltraPong/build/src/Command_Interface/cmake_install.cmake")
+  include("/home/errom/projects/myprojects/UltraPong/build/src/PlayerMoveUpCommand/cmake_install.cmake")
 
 endif()
 

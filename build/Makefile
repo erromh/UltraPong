@@ -272,6 +272,32 @@ Ball/fast:
 	$(MAKE) $(MAKESILENT) -f src/Ball/CMakeFiles/Ball.dir/build.make src/Ball/CMakeFiles/Ball.dir/build
 .PHONY : Ball/fast
 
+#=============================================================================
+# Target rules for targets named Players
+
+# Build rule for target.
+Players: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Players
+.PHONY : Players
+
+# fast build rule for target.
+Players/fast:
+	$(MAKE) $(MAKESILENT) -f src/Players/CMakeFiles/Players.dir/build.make src/Players/CMakeFiles/Players.dir/build
+.PHONY : Players/fast
+
+#=============================================================================
+# Target rules for targets named PlayerMoveUpCommand
+
+# Build rule for target.
+PlayerMoveUpCommand: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PlayerMoveUpCommand
+.PHONY : PlayerMoveUpCommand
+
+# fast build rule for target.
+PlayerMoveUpCommand/fast:
+	$(MAKE) $(MAKESILENT) -f src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/build.make src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/build
+.PHONY : PlayerMoveUpCommand/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -287,6 +313,8 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... Ball"
+	@echo "... PlayerMoveUpCommand"
+	@echo "... Players"
 	@echo "... UitraPong"
 	@echo "... sfml-audio"
 	@echo "... sfml-graphics"

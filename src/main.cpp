@@ -5,6 +5,7 @@
 
 #include "Ball/include/Ball.h"
 #include "Players/include/Players.h"
+#include "PlayerMoveUpCommand/include/PlayerMoveUpCommand.h"
 
 int main()
 {
@@ -16,7 +17,10 @@ int main()
     float plX = 0, plY = 350;
 
     Ball ball1(15, ballX, ballY);
-    Players palyer1(plX, plY);
+    Players player1(plX, plY);
+
+    PlayerMoveUpCommand upCommand(&player1);
+
 
     while (win.isOpen())
     {
@@ -33,11 +37,16 @@ int main()
             {
                 win.close();
             }
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+            {
+                upCommand.execute()
+            }
         }
 
         win.clear(color);
         win.draw(ball1.getShape());
-        win.draw(palyer1.getPlayerShape());
+        win.draw(player1.getPlayerShape());
         win.display();
     }
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DSFML_STATIC
 
-CXX_INCLUDES = -I/home/errom/projects/myprojects/UltraPong/build/_deps/sfml-src/include -I/home/errom/projects/myprojects/UltraPong/src/Ball
+CXX_INCLUDES = -I/home/errom/projects/myprojects/UltraPong/global_var -I/home/errom/projects/myprojects/UltraPong/build/_deps/sfml-src/include -I/home/errom/projects/myprojects/UltraPong/src/Ball -I/home/errom/projects/myprojects/UltraPong/src/Players -I/home/errom/projects/myprojects/UltraPong/src/Command_Interface/include -I/home/errom/projects/myprojects/UltraPong/src/PlayerMoveUpCommand
 
 CXX_FLAGS = 
 

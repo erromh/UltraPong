@@ -3,7 +3,10 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/src/Command_Interface/include",
+                "${workspaceFolder}/src/PlayerMoveUpCommand/include",
+                "${workspaceFolder}/src/Command_Interface"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

@@ -15,6 +15,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/errom/projects/myprojects/UltraPong/build/_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/DependInfo.cmake"
   "/home/errom/projects/myprojects/UltraPong/build/src/Ball/CMakeFiles/Ball.dir/DependInfo.cmake"
+  "/home/errom/projects/myprojects/UltraPong/build/src/Players/CMakeFiles/Players.dir/DependInfo.cmake"
+  "/home/errom/projects/myprojects/UltraPong/build/src/PlayerMoveUpCommand/CMakeFiles/PlayerMoveUpCommand.dir/DependInfo.cmake"
   "/home/errom/projects/myprojects/UltraPong/build/_deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/DependInfo.cmake"
   "/home/errom/projects/myprojects/UltraPong/build/_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/DependInfo.cmake"
   )

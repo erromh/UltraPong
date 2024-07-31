@@ -3,6 +3,7 @@ add_executable(UitraPong main.cpp)
 add_subdirectory(Ball)
 add_subdirectory(Players)
 add_subdirectory(Command_Interface)
+add_subdirectory(PlayerMoveUpCommand)
 
 target_link_libraries(UitraPong 
 	PRIVATE
@@ -10,7 +11,7 @@ target_link_libraries(UitraPong
 		Ball
 		Players
 		Command_Interface
+		PlayerMoveUpCommand
 )
 
-#include_directories(${CMAKE_SOURCE_DIR}/Command_Interface)
 
