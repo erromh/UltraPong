@@ -114,3 +114,11 @@ D:/c++++/UltraPong/out/build/x86-debug/src/PlayerMoveDownCommand/CMakeFiles/rebu
 D:/c++++/UltraPong/out/build/x86-debug/src/PlayerMoveDownCommand/CMakeFiles/list_install_components.dir
 D:/c++++/UltraPong/out/build/x86-debug/src/PlayerMoveDownCommand/CMakeFiles/install.dir
 D:/c++++/UltraPong/out/build/x86-debug/src/PlayerMoveDownCommand/CMakeFiles/install/local.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Game/CMakeFiles/Game.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Game/CMakeFiles/package.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Game/CMakeFiles/package_source.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Game/CMakeFiles/edit_cache.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Game/CMakeFiles/rebuild_cache.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Game/CMakeFiles/list_install_components.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Game/CMakeFiles/install.dir
+D:/c++++/UltraPong/out/build/x86-debug/src/Game/CMakeFiles/install/local.dir

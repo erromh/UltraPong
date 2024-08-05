@@ -7,36 +7,40 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\PlayerMoveDownCommand\\PlayerMoveDownCommand.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\PlayerMoveDownCommand\\PlayerMoveDownCommand.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Game\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Game\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\PlayerMoveDownCommand\\include\\PlayerMoveDownCommand.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\PlayerMoveDownCommand\\include\\PlayerMoveDownCommand.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Game\\include\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Game\\include\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\PlayerMoveUpCommand\\PlayerMoveUpCommand.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\PlayerMoveUpCommand\\PlayerMoveUpCommand.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Players\\Players.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Players\\Players.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Players\\include\\Players.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Players\\include\\Players.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\global_var\\GlobalVaribles.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:global_var\\GlobalVaribles.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Game\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Game\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\global_var\\GlobalVaribles.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:global_var\\GlobalVaribles.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Players\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Players\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Players\\include\\Players.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Players\\include\\Players.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Players\\Players.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Players\\Players.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,13 +54,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "CMakeLists.txt",
               "DocumentMoniker": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\CMakeLists.txt",
               "RelativeDocumentMoniker": "CMakeLists.txt",
               "ToolTip": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\CMakeLists.txt",
               "RelativeToolTip": "CMakeLists.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-07-01T15:57:19.654Z",
               "IsPinned": true,
@@ -64,13 +68,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "CMakeLists.txt",
               "DocumentMoniker": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\CMakeLists.txt",
               "RelativeDocumentMoniker": "src\\CMakeLists.txt",
               "ToolTip": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\CMakeLists.txt",
               "RelativeToolTip": "src\\CMakeLists.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-07-16T14:48:11.881Z",
               "IsPinned": true,
@@ -84,7 +88,7 @@
               "RelativeDocumentMoniker": "src\\main.cpp",
               "ToolTip": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\main.cpp",
               "RelativeToolTip": "src\\main.cpp",
-              "ViewState": "AQIAABYAAAAAMzMzMzMLwDIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-06T08:00:22.469Z",
               "IsPinned": true,
@@ -98,7 +102,7 @@
               "RelativeDocumentMoniker": "global_var\\GlobalVaribles.h",
               "ToolTip": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\global_var\\GlobalVaribles.h",
               "RelativeToolTip": "global_var\\GlobalVaribles.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-21T15:14:38.607Z",
               "IsPinned": true,
@@ -106,20 +110,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerMoveDownCommand.cpp",
-              "DocumentMoniker": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\PlayerMoveDownCommand\\PlayerMoveDownCommand.cpp",
-              "RelativeDocumentMoniker": "src\\PlayerMoveDownCommand\\PlayerMoveDownCommand.cpp",
-              "ToolTip": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\PlayerMoveDownCommand\\PlayerMoveDownCommand.cpp",
-              "RelativeToolTip": "src\\PlayerMoveDownCommand\\PlayerMoveDownCommand.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-31T16:06:49.256Z",
+              "DocumentIndex": 7,
+              "Title": "CMakeLists.txt",
+              "DocumentMoniker": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Players\\CMakeLists.txt",
+              "RelativeDocumentMoniker": "src\\Players\\CMakeLists.txt",
+              "ToolTip": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Players\\CMakeLists.txt",
+              "RelativeToolTip": "src\\Players\\CMakeLists.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-08-05T15:54:28.572Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "CMakeLists.txt",
+              "DocumentMoniker": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Game\\CMakeLists.txt",
+              "RelativeDocumentMoniker": "src\\Game\\CMakeLists.txt",
+              "ToolTip": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Game\\CMakeLists.txt",
+              "RelativeToolTip": "src\\Game\\CMakeLists.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-08-05T15:48:04.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Game.h",
+              "DocumentMoniker": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Game\\include\\Game.h",
+              "RelativeDocumentMoniker": "src\\Game\\include\\Game.h",
+              "ToolTip": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Game\\include\\Game.h",
+              "RelativeToolTip": "src\\Game\\include\\Game.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-05T15:41:43.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Game.cpp",
+              "DocumentMoniker": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Game\\Game.cpp",
+              "RelativeDocumentMoniker": "src\\Game\\Game.cpp",
+              "ToolTip": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Game\\Game.cpp",
+              "RelativeToolTip": "src\\Game\\Game.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-05T15:32:04.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Players.cpp",
               "DocumentMoniker": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Players\\Players.cpp",
               "RelativeDocumentMoniker": "src\\Players\\Players.cpp",
@@ -132,46 +179,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerMoveDownCommand.h",
-              "DocumentMoniker": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\PlayerMoveDownCommand\\include\\PlayerMoveDownCommand.h",
-              "RelativeDocumentMoniker": "src\\PlayerMoveDownCommand\\include\\PlayerMoveDownCommand.h",
-              "ToolTip": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\PlayerMoveDownCommand\\include\\PlayerMoveDownCommand.h",
-              "RelativeToolTip": "src\\PlayerMoveDownCommand\\include\\PlayerMoveDownCommand.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-31T15:52:03.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerMoveUpCommand.cpp",
-              "DocumentMoniker": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\PlayerMoveUpCommand\\PlayerMoveUpCommand.cpp",
-              "RelativeDocumentMoniker": "src\\PlayerMoveUpCommand\\PlayerMoveUpCommand.cpp",
-              "ToolTip": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\PlayerMoveUpCommand\\PlayerMoveUpCommand.cpp",
-              "RelativeToolTip": "src\\PlayerMoveUpCommand\\PlayerMoveUpCommand.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-31T15:33:22.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Players.h",
               "DocumentMoniker": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Players\\include\\Players.h",
               "RelativeDocumentMoniker": "src\\Players\\include\\Players.h",
               "ToolTip": "D:\\c\u002B\u002B\u002B\u002B\\UltraPong\\src\\Players\\include\\Players.h",
               "RelativeToolTip": "src\\Players\\include\\Players.h",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAsAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-31T16:04:32.961Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

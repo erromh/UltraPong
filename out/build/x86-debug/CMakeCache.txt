@@ -319,6 +319,9 @@ FREETYPE_LIBRARY:FILEPATH=D:/c++++/UltraPong/out/build/x86-debug/_deps/sfml-src/
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=C:/Program Files/Git/cmd/git.exe
 
+//Dependencies for the target
+Game_LIB_DEPENDS:STATIC=general;sfml-graphics;general;Players;general;Ball;general;PlayerMoveDownCommand;general;PlayerMoveUpCommand;
+
 //Path to a file.
 OGG_INCLUDE_DIR:PATH=D:/c++++/UltraPong/out/build/x86-debug/_deps/sfml-src/extlibs/headers
 
@@ -561,7 +564,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=16
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

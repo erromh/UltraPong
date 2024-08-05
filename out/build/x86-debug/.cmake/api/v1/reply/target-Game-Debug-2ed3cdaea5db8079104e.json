@@ -1,0 +1,227 @@
+{
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:X86",
+				"role" : "flags"
+			}
+		]
+	},
+	"artifacts" : 
+	[
+		{
+			"path" : "src/Game/Game.lib"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"include_directories",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"src/Game/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "SFML_STATIC"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "D:/c++++/UltraPong/global_var"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/c++++/UltraPong/src/Game"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/c++++/UltraPong/out/build/x86-debug/_deps/sfml-src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/c++++/UltraPong/src/Players"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/c++++/UltraPong/src/Command_Interface/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/c++++/UltraPong/src/Ball"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/c++++/UltraPong/src/PlayerMoveDownCommand"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/c++++/UltraPong/src/PlayerMoveUpCommand"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "sfml-system::@8cb1db2982443611e568"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sfml-window::@5730451e331e3690ae65"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sfml-graphics::@98af38147d5fa7e70f61"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Ball::@84c34a2e542259aedada"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "PlayerMoveUpCommand::@c99d7c12ec1c04dfb5ba"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Players::@d44997bddbd29570307c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "PlayerMoveDownCommand::@8407ed49bb8545e11d2c"
+		}
+	],
+	"id" : "Game::@a929eadd5dd9e671eb94",
+	"name" : "Game",
+	"nameOnDisk" : "Game.lib",
+	"paths" : 
+	{
+		"build" : "src/Game",
+		"source" : "src/Game"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "src/Game/Game.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "src/Game/include/Game.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Players/include/Players.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Ball/include/Ball.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/PlayerMoveDownCommand/include/PlayerMoveDownCommand.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/PlayerMoveUpCommand/include/PlayerMoveUpCommand.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

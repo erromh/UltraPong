@@ -1,8 +1,7 @@
 #pragma once
 
-struct WindowSize
+enum WindowSize
 {
+    WINWEIGHT = 1700,
+    WINHEIGHT = 900
 };
-
-static float winWeight = 1700;
-static float winHeight = 900;

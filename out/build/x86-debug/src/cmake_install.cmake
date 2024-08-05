@@ -39,6 +39,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("D:/c++++/UltraPong/out/build/x86-debug/src/Command_Interface/cmake_install.cmake")
   include("D:/c++++/UltraPong/out/build/x86-debug/src/PlayerMoveUpCommand/cmake_install.cmake")
   include("D:/c++++/UltraPong/out/build/x86-debug/src/PlayerMoveDownCommand/cmake_install.cmake")
+  include("D:/c++++/UltraPong/out/build/x86-debug/src/Game/cmake_install.cmake")
 
 endif()
 
