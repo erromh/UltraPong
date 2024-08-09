@@ -3,7 +3,9 @@
 Game::Game()
 {
     _gameWindow =
-        std::make_unique<sf::RenderWindow>(sf::VideoMode(WINWEIGHT, WINHEIGHT), "Ultra Pong", sf::Style::Default);
+        std::make_unique<sf::RenderWindow>(sf::VideoMode(WINWIDTH, WINHEIGHT), "Ultra Pong", sf::Style::Default);
+
+    _gameBall = std::make_unique<Ball>(BALLRADIUS, BALLXCOORDINATE, BALLYCOORDINATE);
 }
 
 void Game::startGame()
@@ -25,7 +27,8 @@ void Game::startGame()
             }
         }
 
-        _gameWindow.get()->clear(sf::Color::Green);
+        _gameWindow.get()->clear(sf::Color::Blue);
+        _gameWindow.get()->draw(_gameBall.get()->getShape());
         _gameWindow.get()->display();
     }
 }

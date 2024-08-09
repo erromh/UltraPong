@@ -14,6 +14,8 @@ class Game
   private:
     std::unique_ptr<sf::RenderWindow> _gameWindow;
 
+    std::unique_ptr<Ball> _gameBall;
+
   public:
     Game();
 

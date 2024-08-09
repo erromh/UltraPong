@@ -14,13 +14,11 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\Command_Interface\\include",
+    "\\src\\Ball",
     "\\src\\Game",
     "\\src\\Game\\include",
-    "\\src\\PlayerMoveDownCommand\\include",
-    "\\src\\PlayerMoveUpCommand\\include",
     "\\src\\Players"
   ],
-  "SelectedNode": "\\src\\Game\\CMakeLists.txt",
+  "SelectedNode": "\\src\\Ball\\Ball.cpp",
   "PreviewInSolutionExplorer": false
 }
