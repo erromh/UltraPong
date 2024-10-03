@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <memory>
+#include <string>
 
 #include "BotMode.h"
 #include "GameStrategy.h"
