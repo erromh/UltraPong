@@ -10,6 +10,13 @@ GameController::GameController(sf::RenderWindow &window) : _mainWindow(window)
     _mainWindow.setTitle("Ultra Pong on other");
 #endif
 
+    if (!_icon.loadFromFile(_iconPath))
+    {
+        throw std::runtime_error("Failed to load icon\n");
+    }
+
+    _mainWindow.setIcon(_icon.getSize().x, _icon.getSize().y, _icon.getPixelsPtr());
+
     _gameFactory = std::make_unique<GameFactory>(_mainWindow);
     _menu = std::make_unique<GameMenu>(_mainWindow);
 }
