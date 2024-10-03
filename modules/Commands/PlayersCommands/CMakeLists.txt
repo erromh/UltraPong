@@ -1,0 +1,2 @@
+add_subdirectory(PlayerMoveDownCommand)
+add_subdirectory(PlayerMoveUpCommand)
