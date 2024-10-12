@@ -1,7 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
-const int w = sf::VideoMode::getDesktopMode().width;
+// const int w = sf::VideoMode::getDesktopMode().width;
 
 enum WindowSize
 {
@@ -46,5 +46,5 @@ enum Themes
 // enum class GameColors
 //{
 //     ,
-//     dss = sf::Color::Black
+// s    dss = sf::Color::Black
 // };
