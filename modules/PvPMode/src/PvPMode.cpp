@@ -21,6 +21,7 @@ void PvPMode::runStrategy(sf::RenderWindow &window)
 
     while (window.isOpen())
     {
+        float deltatime = _clock.restart().asSeconds();
         sf::Event event;
 
         while (window.pollEvent(event))
@@ -31,18 +32,22 @@ void PvPMode::runStrategy(sf::RenderWindow &window)
                 {
                     window.close();
                 }
-
-                if (event.key.code == sf::Keyboard::S)
+                else if (event.key.code == sf::Keyboard::S)
                 {
                     _moveDownCommand->execute(_leftPlayer);
                 }
-
-                if (event.key.code == sf::Keyboard::W)
+                else if (event.key.code == sf::Keyboard::W)
                 {
                     _moveUpCommand->execute(_leftPlayer);
                 }
+                else
+                {
+                    _leftPlayer->stopMoving();
+                }
             }
         }
+
+        _leftPlayer->update(deltatime);
 
         window.clear(sf::Color::Blue);
         window.draw(_leftPlayer->getPlayerShape());

@@ -15,8 +15,9 @@ class PvPMode : public GameStrategy
     Players *_leftPlayer;
 
     PlayerMoveDownCommand *_moveDownCommand;
-
     PlayerMoveUpCommand *_moveUpCommand;
+
+    sf::Clock _clock;
 
   public:
     PvPMode();

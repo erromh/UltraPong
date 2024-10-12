@@ -1,6 +1,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
+const int w = sf::VideoMode::getDesktopMode().width;
+
 enum WindowSize
 {
     WINWIDTH = 1700,
