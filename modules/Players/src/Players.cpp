@@ -35,6 +35,8 @@ void Players::update(float deltatime)
 void Players::moveUp()
 {
     _velocity.y = -_speed;
+
+    // std::cout << "_velocity.y moveUp() = " << _velocity.y << '\n';
 }
 
 void Players::moveDown()

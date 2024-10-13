@@ -1,8 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
-// const int w = sf::VideoMode::getDesktopMode().width;
-
 enum WindowSize
 {
     WINWIDTH = 1700,
@@ -13,6 +11,19 @@ enum BallData
 {
     BALLXCOORDINATE = (WINWIDTH / 2),
     BALLYCOORDINATE = (WINHEIGHT / 2)
+};
+
+enum PlayerData
+{
+    LEFTPLAYERXCOORDINATE = (WINWIDTH / 50),
+
+    // Fix it !!
+    LEFTPLAYERYCOORDINATE = (WINHEIGHT / 3),
+
+    RIGHTPLAYERXCOORDINATE = (WINWIDTH - LEFTPLAYERXCOORDINATE * 2),
+
+    // Also fix it
+    RIGHTPLAYERYCOORDINATE = (WINHEIGHT / 3)
 };
 
 enum MenuItemsCoordinate
@@ -39,12 +50,3 @@ enum Themes
     Light,
     Dark
 };
-
-// sf::Color menuTextColorLight = sf::Color::White;
-// sf::Color menuTextColorDark = sf::Color::Black;
-
-// enum class GameColors
-//{
-//     ,
-// s    dss = sf::Color::Black
-// };

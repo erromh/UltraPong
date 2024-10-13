@@ -2,10 +2,10 @@
 
 PvPMode::PvPMode()
 {
-    _leftPlayer = new Players(30, 150);
+    _leftPlayer = new Players(LEFTPLAYERXCOORDINATE, LEFTPLAYERYCOORDINATE);
+    _rightPlayer = new Players(RIGHTPLAYERXCOORDINATE, RIGHTPLAYERYCOORDINATE);
 
     _moveDownCommand = PlayerMoveDownCommand::getInstance();
-
     _moveUpCommand = PlayerMoveUpCommand::getInstanse();
 }
 
@@ -22,35 +22,45 @@ void PvPMode::runStrategy(sf::RenderWindow &window)
     while (window.isOpen())
     {
         float deltatime = _clock.restart().asSeconds();
-        sf::Event event;
 
-        while (window.pollEvent(event))
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
         {
-            if (event.type == sf::Event::KeyPressed)
-            {
-                if (event.key.code == sf::Keyboard::Escape)
-                {
-                    window.close();
-                }
-                else if (event.key.code == sf::Keyboard::S)
-                {
-                    _moveDownCommand->execute(_leftPlayer);
-                }
-                else if (event.key.code == sf::Keyboard::W)
-                {
-                    _moveUpCommand->execute(_leftPlayer);
-                }
-                else
-                {
-                    _leftPlayer->stopMoving();
-                }
-            }
+            window.close();
+        }
+        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+        {
+            _moveDownCommand->execute(_leftPlayer);
+        }
+        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+        {
+            _moveUpCommand->execute(_leftPlayer);
+        }
+        else
+        {
+            _leftPlayer->stopMoving();
+        }
+
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+        {
+            _moveDownCommand->execute(_rightPlayer);
+        }
+        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+        {
+            _moveUpCommand->execute(_rightPlayer);
+        }
+        else
+        {
+            _rightPlayer->stopMoving();
         }
 
         _leftPlayer->update(deltatime);
+        _rightPlayer->update(deltatime);
 
         window.clear(sf::Color::Blue);
+
         window.draw(_leftPlayer->getPlayerShape());
+        window.draw(_rightPlayer->getPlayerShape());
+
         window.display();
     }
 }
@@ -58,4 +68,5 @@ void PvPMode::runStrategy(sf::RenderWindow &window)
 PvPMode::~PvPMode()
 {
     delete _leftPlayer;
+    delete _rightPlayer;
 }

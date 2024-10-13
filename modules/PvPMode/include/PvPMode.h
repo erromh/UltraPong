@@ -4,6 +4,8 @@
 
 #include "GameStrategy.h"
 
+#include "GlobalVaribles.h"
+
 #include "Ball.h"
 #include "PlayerMoveDownCommand.h"
 #include "PlayerMoveUpCommand.h"
@@ -13,6 +15,7 @@ class PvPMode : public GameStrategy
 {
   private:
     Players *_leftPlayer;
+    Players *_rightPlayer;
 
     PlayerMoveDownCommand *_moveDownCommand;
     PlayerMoveUpCommand *_moveUpCommand;

@@ -24,7 +24,6 @@ class Players
     sf::RectangleShape getPlayerShape();
 
     void moveUp();
-
     void moveDown();
 
     void update(float deltatime);
