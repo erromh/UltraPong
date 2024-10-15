@@ -27,31 +27,9 @@ void PvPMode::runStrategy(sf::RenderWindow &window)
         {
             window.close();
         }
-        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-        {
-            _moveDownCommand->execute(_leftPlayer);
-        }
-        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-        {
-            _moveUpCommand->execute(_leftPlayer);
-        }
-        else
-        {
-            _leftPlayer->stopMoving();
-        }
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-        {
-            _moveDownCommand->execute(_rightPlayer);
-        }
-        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
-        {
-            _moveUpCommand->execute(_rightPlayer);
-        }
-        else
-        {
-            _rightPlayer->stopMoving();
-        }
+        handlePlayerMovement(sf::Keyboard::S, sf::Keyboard::W, _leftPlayer);
+        handlePlayerMovement(sf::Keyboard::Down, sf::Keyboard::Up, _rightPlayer);
 
         _leftPlayer->update(deltatime);
         _rightPlayer->update(deltatime);
@@ -62,6 +40,22 @@ void PvPMode::runStrategy(sf::RenderWindow &window)
         window.draw(_rightPlayer->getPlayerShape());
 
         window.display();
+    }
+}
+
+void PvPMode::handlePlayerMovement(const sf::Keyboard::Key downKey, const sf::Keyboard::Key upKey, Players *player)
+{
+    if (sf::Keyboard::isKeyPressed(downKey))
+    {
+        _moveDownCommand->execute(player);
+    }
+    else if (sf::Keyboard::isKeyPressed(upKey))
+    {
+        _moveUpCommand->execute(player);
+    }
+    else
+    {
+        player->stopMoving();
     }
 }
 

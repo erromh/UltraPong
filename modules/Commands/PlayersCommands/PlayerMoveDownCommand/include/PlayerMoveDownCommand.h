@@ -4,7 +4,7 @@
 
 #include <iostream>
 
-class PlayerMoveDownCommand : public Command
+class PlayerMoveDownCommand
 {
   private:
     PlayerMoveDownCommand() = default;

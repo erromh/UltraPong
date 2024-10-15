@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <map>
 
 #include "GameStrategy.h"
 
@@ -21,6 +22,9 @@ class PvPMode : public GameStrategy
     PlayerMoveUpCommand *_moveUpCommand;
 
     sf::Clock _clock;
+
+  private:
+    void handlePlayerMovement(const sf::Keyboard::Key downKey, const sf::Keyboard::Key upKey, Players *player);
 
   public:
     PvPMode();
