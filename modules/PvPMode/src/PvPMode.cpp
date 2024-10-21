@@ -19,14 +19,26 @@ void PvPMode::runStrategy(sf::RenderWindow &window)
 {
     std::cout << "Pvp mode is working\n";
 
+    window.setFramerateLimit(60);
+
     while (window.isOpen())
     {
-        float deltatime = _clock.restart().asSeconds();
+        sf::Event event;
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+        while (window.pollEvent(event))
         {
-            window.close();
+            if (event.type == sf::Event::Closed)
+            {
+                window.close();
+            }
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+            {
+                window.close();
+            }
         }
+
+        float deltatime = _clock.restart().asSeconds();
 
         handlePlayerMovement(sf::Keyboard::S, sf::Keyboard::W, _leftPlayer);
         handlePlayerMovement(sf::Keyboard::Down, sf::Keyboard::Up, _rightPlayer);

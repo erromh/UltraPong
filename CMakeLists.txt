@@ -15,12 +15,7 @@ FetchContent_Declare(
     GIT_REPOSITORY https://github.com/SFML/SFML.git
     GIT_TAG 2.6.x
 )
-FetchContent_Declare(
-    imgui
-    GIT_REPOSITORY https://github.com/ocornut/imgui.git
-    GIT_TAG v1.91.1
-)
-FetchContent_MakeAvailable(imgui SFML)
+FetchContent_MakeAvailable(SFML)
 
 include_directories(${CMAKE_SOURCE_DIR}/global_var)
 
