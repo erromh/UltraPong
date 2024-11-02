@@ -17,6 +17,8 @@ PvPMode &PvPMode::getInstance()
 
 void PvPMode::runStrategy(sf::RenderWindow &window)
 {
+    bool isLeftPlayerColliding = false;
+
     std::cout << "Pvp mode is working\n";
 
     window.setFramerateLimit(60);
@@ -60,10 +62,14 @@ void PvPMode::handlePlayerMovement(const sf::Keyboard::Key downKey, const sf::Ke
     if (sf::Keyboard::isKeyPressed(downKey))
     {
         _moveDownCommand->execute(player);
+
+        CollisionHandler::getInstance().lowerPlayerCollision(player);
     }
     else if (sf::Keyboard::isKeyPressed(upKey))
     {
         _moveUpCommand->execute(player);
+
+        CollisionHandler::getInstance().upperPlayerCollision(player);
     }
     else
     {

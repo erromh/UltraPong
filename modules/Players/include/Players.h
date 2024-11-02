@@ -2,13 +2,15 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
+#include "GlobalVaribles.h"
+
 class Players
 {
   private:
     float _x;
     float _y;
 
-    float _speed = 150;
+    float _speed = 900;
 
     sf::Vector2f _velocity;
 
@@ -28,4 +30,7 @@ class Players
 
     void update(float deltatime);
     void stopMoving();
+
+
+    void collision();
 };

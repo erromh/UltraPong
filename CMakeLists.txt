@@ -35,6 +35,7 @@ add_subdirectory(modules/Core)
 add_subdirectory(modules/PvPMode)
 add_subdirectory(modules/NetworkMode)
 add_subdirectory(modules/BotMode)
+add_subdirectory(modules/CollisionHandler)
 
 add_subdirectory(apps)
 

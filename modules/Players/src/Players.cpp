@@ -1,12 +1,10 @@
 #include "Players.h"
 
-#include "GlobalVaribles.h"
-
 Players::Players(float x, float y) : _x(x), _y(y)
 {
     _playersShape.setPosition(_x, _y);
     _playersShape.setFillColor(sf::Color::White);
-    _playersShape.setSize(sf::Vector2f(30, 150));
+    _playersShape.setSize(sf::Vector2f(PLAYERSIZEX, PLAYERSIZEY));
 
     dt = _clock.restart();
 
@@ -27,6 +25,11 @@ void Players::stopMoving()
     _velocity.y = 0;
 }
 
+void Players::collision()
+{
+    _speed = 0;
+}
+
 void Players::update(float deltatime)
 {
     _playersShape.move(_velocity * deltatime);
@@ -35,8 +38,6 @@ void Players::update(float deltatime)
 void Players::moveUp()
 {
     _velocity.y = -_speed;
-
-    // std::cout << "_velocity.y moveUp() = " << _velocity.y << '\n';
 }
 
 void Players::moveDown()

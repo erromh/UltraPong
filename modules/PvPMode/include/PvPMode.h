@@ -2,12 +2,13 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <map>
-
-#include "GameStrategy.h"
+#include <memory>
 
 #include "GlobalVaribles.h"
 
 #include "Ball.h"
+#include "CollisionHandler.h"
+#include "GameStrategy.h"
 #include "PlayerMoveDownCommand.h"
 #include "PlayerMoveUpCommand.h"
 #include "Players.h"

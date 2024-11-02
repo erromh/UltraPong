@@ -20,4 +20,5 @@ target_link_libraries(Core
 		PlayerMoveDownCommand
 		PlayerMoveUpCommand
 		Command_Interface
+		CollisionHandler
 )
