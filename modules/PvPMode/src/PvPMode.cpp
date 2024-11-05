@@ -5,6 +5,8 @@ PvPMode::PvPMode()
     _leftPlayer = new Players(LEFTPLAYERXCOORDINATE, LEFTPLAYERYCOORDINATE);
     _rightPlayer = new Players(RIGHTPLAYERXCOORDINATE, RIGHTPLAYERYCOORDINATE);
 
+    _ball = std::make_unique<Ball>();
+
     _moveDownCommand = PlayerMoveDownCommand::getInstance();
     _moveUpCommand = PlayerMoveUpCommand::getInstanse();
 }
@@ -48,10 +50,11 @@ void PvPMode::runStrategy(sf::RenderWindow &window)
         _leftPlayer->update(deltatime);
         _rightPlayer->update(deltatime);
 
-        window.clear(sf::Color::Blue);
+        window.clear(sf::Color::Black);
 
         window.draw(_leftPlayer->getPlayerShape());
         window.draw(_rightPlayer->getPlayerShape());
+        window.draw(_ball.get()->getShape());
 
         window.display();
     }

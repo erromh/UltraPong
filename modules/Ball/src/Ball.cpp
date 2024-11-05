@@ -1,13 +1,13 @@
 #include "Ball.h"
 
-Ball::Ball(float startX, float startY)
+Ball::Ball()
 {
-    _ballShape.setPosition(startX, startY);
-    _ballShape.setSize(sf::Vector2f(30, 30));
+    _ballShape.setPosition(BALLXCOORDINATE, BALLYCOORDINATE);
+    _ballShape.setRadius(BALLRADIUS);
     _ballShape.setFillColor(sf::Color::White);
 }
 
-sf::RectangleShape Ball::getShape() const
+sf::CircleShape Ball::getShape() const
 {
     return _ballShape;
 }

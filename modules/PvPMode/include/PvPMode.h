@@ -24,6 +24,8 @@ class PvPMode : public GameStrategy
 
     sf::Clock _clock;
 
+    std::unique_ptr<Ball> _ball;
+
   private:
     void handlePlayerMovement(const sf::Keyboard::Key downKey, const sf::Keyboard::Key upKey, Players *player);
 

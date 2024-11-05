@@ -10,7 +10,9 @@ enum WindowSize
 enum BallData
 {
     BALLXCOORDINATE = (WINWIDTH / 2),
-    BALLYCOORDINATE = (WINHEIGHT / 2)
+    BALLYCOORDINATE = (WINHEIGHT / 2),
+
+    BALLRADIUS = (WINHEIGHT / 60)
 };
 
 enum PlayerData

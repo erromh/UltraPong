@@ -1,10 +1,12 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
+#include "GlobalVaribles.h"
+
 class Ball
 {
   private:
-    sf::RectangleShape _ballShape;
+    sf::CircleShape _ballShape;
     sf::Vector2f _ballVelocity;
 
     const float _initialSpeed = 200.f;
@@ -15,8 +17,8 @@ class Ball
   public:
     Ball(float radius, float startX, float startY, float speedX, float speedY);
 
-    Ball(float startX, float startY);
+    Ball();
 
     sf::Vector2f getPosition() const;
-    sf::RectangleShape getShape() const;
+    sf::CircleShape getShape() const;
 };
