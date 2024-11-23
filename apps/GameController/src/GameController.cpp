@@ -18,14 +18,20 @@ GameController::GameController(sf::RenderWindow &window) : _mainWindow(window)
     _mainWindow.setIcon(_icon.getSize().x, _icon.getSize().y, _icon.getPixelsPtr());
 
     _gameFactory = std::make_unique<GameFactory>(_mainWindow);
+
     _menu = std::make_unique<GameMenu>(_mainWindow);
 }
 
 void GameController::startMenu()
 {
+    _mainWindow.setFramerateLimit(60);
+    _mainWindow.setVerticalSyncEnabled(true);
+
+    bool needsRedraw = true;
+
     while (_mainWindow.isOpen())
     {
-        handleEvents();
+        handleEvents(needsRedraw);
 
         // _mainWindow.clear(sf::Color::Black);
 
@@ -39,8 +45,13 @@ void GameController::startMenu()
             _mainWindow.clear(sf::Color::Green);
         }*/
 
-        _menu->drawItems();
-        _mainWindow.display();
+        if (needsRedraw)
+        {
+            _mainWindow.clear(sf::Color::Black);
+            _menu->drawItems();
+            _mainWindow.display();
+            needsRedraw = false;
+        }
     }
 }
 
@@ -54,7 +65,7 @@ void GameController::changeTheme()
     }
 }
 
-void GameController::handleEvents()
+void GameController::handleEvents(bool &needsRedraw)
 {
     sf::Event event;
 
@@ -70,21 +81,23 @@ void GameController::handleEvents()
             _mainWindow.close();
         }
 
-        switch (event.type)
+        if (event.type == sf::Event::KeyReleased)
         {
-        case sf::Event::KeyReleased:
-            if (event.key.code == sf::Keyboard::W || event.key.code == sf::Keyboard::Up)
+            switch (event.key.code)
             {
+            case sf::Keyboard::W:
+            case sf::Keyboard::Up:
                 _menu->moveUp();
-            }
+                needsRedraw = true;
+                break;
 
-            if (event.key.code == sf::Keyboard::S || event.key.code == sf::Keyboard::Down)
-            {
+            case sf::Keyboard::S:
+            case sf::Keyboard::Down:
                 _menu->moveDown();
-            }
+                needsRedraw = true;
+                break;
 
-            if (event.key.code == sf::Keyboard::Enter)
-            {
+            case sf::Keyboard::Enter:
                 switch (_menu->getSelectedMenuItem())
                 {
                 case 0:
@@ -104,10 +117,13 @@ void GameController::handleEvents()
                     _mainWindow.close();
                     break;
                 }
+
+                break;
+                needsRedraw = true;
+
+            default:
+                break;
             }
-            break;
-        default:
-            break;
         }
     }
 }

@@ -23,7 +23,7 @@ class GameController
     sf::Image _icon;
 
   private:
-    void handleEvents();
+    void handleEvents(bool &needsRedraw);
 
     void changeTheme();
 

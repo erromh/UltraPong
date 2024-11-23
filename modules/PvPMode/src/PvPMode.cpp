@@ -24,6 +24,7 @@ void PvPMode::runStrategy(sf::RenderWindow &window)
     std::cout << "Pvp mode is working\n";
 
     window.setFramerateLimit(60);
+    window.setVerticalSyncEnabled(true);
 
     while (window.isOpen())
     {
