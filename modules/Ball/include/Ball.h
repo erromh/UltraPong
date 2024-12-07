@@ -1,5 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include <ctime>
 
 #include "GlobalVaribles.h"
 
@@ -19,6 +20,12 @@ class Ball
 
     Ball();
 
+    void ballMoving();
+    void update(float &deltatime);
+
     sf::Vector2f getPosition() const;
     sf::CircleShape getShape() const;
+
+    float getSpeedX();
+    void setSpeedX();
 };

@@ -31,6 +31,5 @@ class Players
     void update(float deltatime);
     void stopMoving();
 
-
     void collision();
 };

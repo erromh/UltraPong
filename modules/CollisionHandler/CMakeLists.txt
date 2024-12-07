@@ -13,4 +13,5 @@ target_link_libraries(CollisionHandler
 		sfml-graphics
 		Players
 		PvPMode
+		Ball
 )

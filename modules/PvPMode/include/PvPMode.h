@@ -29,6 +29,8 @@ class PvPMode : public GameStrategy
   private:
     void handlePlayerMovement(const sf::Keyboard::Key downKey, const sf::Keyboard::Key upKey, Players *player);
 
+    //void 
+
   public:
     PvPMode();
     ~PvPMode();

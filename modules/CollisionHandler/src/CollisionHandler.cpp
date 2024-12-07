@@ -27,3 +27,13 @@ void CollisionHandler::lowerPlayerCollision(Players *player)
         player->stopMoving();
     }
 }
+
+void CollisionHandler::ballWindowCollision(std::unique_ptr<Ball> &ball)
+{
+    if ((ball.get()->getPosition().y + ball.get()->getShape().getRadius()) >= WINHEIGHT ||
+        ball.get()->getPosition().y <= 0)
+    {
+        std::cout << "Ball collision y\n";
+        ball.get()->setSpeedX();
+    }
+}

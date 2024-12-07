@@ -21,8 +21,6 @@ void PvPMode::runStrategy(sf::RenderWindow &window)
 {
     bool isLeftPlayerColliding = false;
 
-    std::cout << "Pvp mode is working\n";
-
     window.setFramerateLimit(60);
     window.setVerticalSyncEnabled(true);
 
@@ -48,8 +46,11 @@ void PvPMode::runStrategy(sf::RenderWindow &window)
         handlePlayerMovement(sf::Keyboard::S, sf::Keyboard::W, _leftPlayer);
         handlePlayerMovement(sf::Keyboard::Down, sf::Keyboard::Up, _rightPlayer);
 
+        CollisionHandler::getInstance().ballWindowCollision(_ball);
+
         _leftPlayer->update(deltatime);
         _rightPlayer->update(deltatime);
+        _ball.get()->update(deltatime);
 
         window.clear(sf::Color::Black);
 
