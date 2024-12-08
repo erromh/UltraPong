@@ -1,13 +1,16 @@
 #include "Ball.h"
 
-Ball::Ball()
+Ball::Ball():_gen(_rd())
 {
     _ballShape.setPosition(BALLXCOORDINATE, BALLYCOORDINATE);
     _ballShape.setRadius(BALLRADIUS);
     _ballShape.setFillColor(sf::Color::White);
 
-    _speedX = rand() % 10;
-    _speedY = rand() % 10;
+    std::uniform_real_distribution<> xDistrib(400, 600);
+    std::uniform_real_distribution<> yDistrib(400, 600);
+
+    _speedX = xDistrib(_gen); 
+    _speedY = yDistrib(_gen);
 
     _ballVelocity = sf::Vector2f(_speedX, _speedY);
 }
@@ -24,20 +27,25 @@ sf::Vector2f Ball::getPosition() const
 
 void Ball::update(float &deltatime)
 {
-    _ballShape.move(_ballVelocity * _speedX); // * deltatime);
+    _ballShape.move(_ballVelocity * deltatime);
 }
-
+  
 float Ball::getSpeedX()
 {
     return _speedX;
 }
 
-void Ball::setSpeedX()
+void Ball::changeXDirection()
 {
-    _speedX *= -1;
+    _ballVelocity.x *= -1;
 }
 
-void Ball::ballMoving()
+float Ball::getSpeedY()
 {
-    //_ballShape.move(_ballVelocity * );
+    return _speedY;
+}
+
+void Ball::changeYDirection()
+{
+    _ballVelocity.y *= -1;
 }

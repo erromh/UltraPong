@@ -34,6 +34,12 @@ void CollisionHandler::ballWindowCollision(std::unique_ptr<Ball> &ball)
         ball.get()->getPosition().y <= 0)
     {
         std::cout << "Ball collision y\n";
-        ball.get()->setSpeedX();
+        ball.get()->changeYDirection();
+    }
+
+    if ((ball.get()->getPosition().x + ball.get()->getShape().getRadius()) >= WINWIDTH || ball.get()->getPosition().x <= 0)
+    {
+        std::cout << "Ball collision x\n";
+        ball.get()->changeXDirection();
     }
 }

@@ -1,6 +1,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <ctime>
+#include <iostream>
+#include <random>
 
 #include "GlobalVaribles.h"
 
@@ -15,6 +17,13 @@ class Ball
     float _speedX;
     float _speedY;
 
+   /*int lower = 400;
+    int upper = 600;*/
+
+    std::random_device _rd;
+    std::mt19937 _gen;
+    // std::uniform_int_distribution<> distrib();
+
   public:
     Ball(float radius, float startX, float startY, float speedX, float speedY);
 
@@ -27,5 +36,8 @@ class Ball
     sf::CircleShape getShape() const;
 
     float getSpeedX();
-    void setSpeedX();
+    void changeXDirection();
+
+    float getSpeedY();
+    void changeYDirection();
 };
