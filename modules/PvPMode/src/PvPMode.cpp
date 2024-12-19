@@ -2,8 +2,8 @@
 
 PvPMode::PvPMode()
 {
-    _leftPlayer = new Players(LEFTPLAYERXCOORDINATE, LEFTPLAYERYCOORDINATE);
-    _rightPlayer = new Players(RIGHTPLAYERXCOORDINATE, RIGHTPLAYERYCOORDINATE);
+    _leftPlayer = std::make_unique<Players>(LEFTPLAYERXCOORDINATE, LEFTPLAYERYCOORDINATE);
+    _rightPlayer = std::make_unique<Players>(RIGHTPLAYERXCOORDINATE, RIGHTPLAYERYCOORDINATE);
 
     _ball = std::make_unique<Ball>();
 
@@ -48,11 +48,11 @@ void PvPMode::runStrategy(sf::RenderWindow &window)
 
         CollisionHandler::getInstance().ballWindowCollision(_ball);
 
-        _leftPlayer->update(deltatime);
-        _rightPlayer->update(deltatime);
-        _ball.get()->update(deltatime);
+        CollisionHandler::getInstance().ballPlayersCollision(_ball, _leftPlayer, _rightPlayer);
 
-        window.clear(sf::Color::Black);
+        updateEntity(deltatime);
+
+        window.clear(sf::Color(0, 0, 0));
 
         window.draw(_leftPlayer->getPlayerShape());
         window.draw(_rightPlayer->getPlayerShape());
@@ -62,7 +62,15 @@ void PvPMode::runStrategy(sf::RenderWindow &window)
     }
 }
 
-void PvPMode::handlePlayerMovement(const sf::Keyboard::Key downKey, const sf::Keyboard::Key upKey, Players *player)
+void PvPMode::updateEntity(float &deltatime)
+{
+    _leftPlayer->update(deltatime);
+    _rightPlayer->update(deltatime);
+    _ball.get()->update(deltatime);
+}
+
+void PvPMode::handlePlayerMovement(const sf::Keyboard::Key downKey, const sf::Keyboard::Key upKey,
+                                   std::unique_ptr<Players> &player)
 {
     if (sf::Keyboard::isKeyPressed(downKey))
     {
@@ -84,6 +92,4 @@ void PvPMode::handlePlayerMovement(const sf::Keyboard::Key downKey, const sf::Ke
 
 PvPMode::~PvPMode()
 {
-    delete _leftPlayer;
-    delete _rightPlayer;
 }

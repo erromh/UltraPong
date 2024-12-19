@@ -16,8 +16,8 @@
 class PvPMode : public GameStrategy
 {
   private:
-    Players *_leftPlayer;
-    Players *_rightPlayer;
+    std::unique_ptr<Players> _leftPlayer;
+    std::unique_ptr<Players> _rightPlayer;
 
     PlayerMoveDownCommand *_moveDownCommand;
     PlayerMoveUpCommand *_moveUpCommand;
@@ -27,9 +27,10 @@ class PvPMode : public GameStrategy
     std::unique_ptr<Ball> _ball;
 
   private:
-    void handlePlayerMovement(const sf::Keyboard::Key downKey, const sf::Keyboard::Key upKey, Players *player);
+    void handlePlayerMovement(const sf::Keyboard::Key downKey, const sf::Keyboard::Key upKey,
+                              std::unique_ptr<Players> &player);
 
-    //void 
+    void updateEntity(float &deltatime);
 
   public:
     PvPMode();

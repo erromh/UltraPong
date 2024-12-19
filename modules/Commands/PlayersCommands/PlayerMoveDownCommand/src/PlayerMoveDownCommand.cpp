@@ -7,7 +7,7 @@ PlayerMoveDownCommand *PlayerMoveDownCommand::getInstance()
     return _instance;
 }
 
-void PlayerMoveDownCommand::execute(Players *player)
+void PlayerMoveDownCommand::execute(std::unique_ptr<Players> &player)
 {
     if (player)
     {

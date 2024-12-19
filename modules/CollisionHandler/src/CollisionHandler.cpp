@@ -1,3 +1,8 @@
+#define ballPosition ball.get()->getPosition()
+#define ballShape ball.get()->getShape()
+#define leftplayerShape leftPlayer.get()->getPlayerShape()
+#define rightPlayerShape rightPlayer.get()->getPlayerShape()
+
 #include "CollisionHandler.h"
 
 CollisionHandler::CollisionHandler()
@@ -10,18 +15,20 @@ CollisionHandler &CollisionHandler::getInstance()
     return instance;
 }
 
-void CollisionHandler::upperPlayerCollision(Players *player)
+void CollisionHandler::upperPlayerCollision(std::unique_ptr<Players> &player)
 {
     // Check for collision with upper boundary
+
     if (player->getPlayerShape().getPosition().y <= 0)
     {
         player->stopMoving();
     }
 }
 
-void CollisionHandler::lowerPlayerCollision(Players *player)
+void CollisionHandler::lowerPlayerCollision(std::unique_ptr<Players> &player)
 {
     // Check for collision with lower boundary
+
     if ((player->getPlayerShape().getPosition().y + PLAYERSIZEY) >= WINHEIGHT)
     {
         player->stopMoving();
@@ -30,16 +37,31 @@ void CollisionHandler::lowerPlayerCollision(Players *player)
 
 void CollisionHandler::ballWindowCollision(std::unique_ptr<Ball> &ball)
 {
-    if ((ball.get()->getPosition().y + ball.get()->getShape().getRadius()) >= WINHEIGHT ||
-        ball.get()->getPosition().y <= 0)
+    // Check for collision with window bounbary
+
+    if ((ballPosition.y + ballShape.getRadius()) >= WINHEIGHT || ballPosition.y <= 0)
     {
-        std::cout << "Ball collision y\n";
         ball.get()->changeYDirection();
     }
 
-    if ((ball.get()->getPosition().x + ball.get()->getShape().getRadius()) >= WINWIDTH || ball.get()->getPosition().x <= 0)
+    if ((ballPosition.x + ballShape.getRadius()) >= WINWIDTH || ballPosition.x <= 0)
     {
-        std::cout << "Ball collision x\n";
+        ball.get()->changeXDirection();
+    }
+}
+
+void CollisionHandler::ballPlayersCollision(std::unique_ptr<Ball> &ball, std::unique_ptr<Players> &leftPlayer,
+                                            std::unique_ptr<Players> &rightPlayer)
+{
+    // Check for collision with players
+
+    if (leftplayerShape.getGlobalBounds().intersects(ballShape.getGlobalBounds()))
+    {
+        ball.get()->changeXDirection();
+    }
+
+    if (rightPlayerShape.getGlobalBounds().intersects(ballShape.getGlobalBounds()))
+    {
         ball.get()->changeXDirection();
     }
 }

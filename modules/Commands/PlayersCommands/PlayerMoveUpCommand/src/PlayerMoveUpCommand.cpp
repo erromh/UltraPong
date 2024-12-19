@@ -7,7 +7,7 @@ PlayerMoveUpCommand *PlayerMoveUpCommand::getInstanse()
     return _instanse;
 }
 
-void PlayerMoveUpCommand::execute(Players *player)
+void PlayerMoveUpCommand::execute(std::unique_ptr<Players> &player)
 {
     if (player)
     {

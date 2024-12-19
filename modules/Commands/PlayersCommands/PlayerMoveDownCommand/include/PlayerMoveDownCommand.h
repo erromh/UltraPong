@@ -3,6 +3,7 @@
 #include "Players.h"
 
 #include <iostream>
+#include <memory>
 
 class PlayerMoveDownCommand
 {
@@ -16,5 +17,5 @@ class PlayerMoveDownCommand
 
     static PlayerMoveDownCommand *getInstance();
 
-    void execute(Players *player);
+    void execute(std::unique_ptr<Players> &player);
 };

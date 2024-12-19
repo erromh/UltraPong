@@ -17,12 +17,8 @@ class Ball
     float _speedX;
     float _speedY;
 
-   /*int lower = 400;
-    int upper = 600;*/
-
     std::random_device _rd;
     std::mt19937 _gen;
-    // std::uniform_int_distribution<> distrib();
 
   public:
     Ball(float radius, float startX, float startY, float speedX, float speedY);
