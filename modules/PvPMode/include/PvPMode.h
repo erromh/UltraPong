@@ -8,6 +8,7 @@
 
 #include "Ball.h"
 #include "CollisionHandler.h"
+#include "ExitWindow.h"
 #include "GameStrategy.h"
 #include "PlayerMoveDownCommand.h"
 #include "PlayerMoveUpCommand.h"
@@ -19,18 +20,33 @@ class PvPMode : public GameStrategy
     std::unique_ptr<Players> _leftPlayer;
     std::unique_ptr<Players> _rightPlayer;
 
+    std::unique_ptr<Ball> _ball;
+    std::unique_ptr<ExitWindow> _exitWindow;
+
     PlayerMoveDownCommand *_moveDownCommand;
     PlayerMoveUpCommand *_moveUpCommand;
 
     sf::Clock _clock;
 
-    std::unique_ptr<Ball> _ball;
+    int leftPlayerCount = 0;
+    int rightPlayerCount = 0;
 
   private:
-    void handlePlayerMovement(const sf::Keyboard::Key downKey, const sf::Keyboard::Key upKey,
-                              std::unique_ptr<Players> &player);
+    void handlePlayerMovement(const sf::Keyboard::Key downKey, const sf::Keyboard::Key upKey, Players *player);
 
-    void updateEntity(float &deltatime);
+    void updateEntity();
+
+    void initializeWindow(sf::RenderWindow &window);
+
+    void processEvents(sf::RenderWindow &window);
+
+    void collisionsHandler();
+
+    void render(sf::RenderWindow &window);
+
+    void initializeEntity();
+
+    void handleExeption(const std::exception &e);
 
   public:
     PvPMode();

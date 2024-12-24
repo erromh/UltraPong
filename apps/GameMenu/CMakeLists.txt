@@ -11,4 +11,5 @@ target_include_directories(GameMenu
 target_link_libraries(GameMenu
 	PRIVATE 
 		sfml-graphics
+		ExitWindow
 )

@@ -11,14 +11,13 @@ class CollisionHandler
   public:
     CollisionHandler();
 
-    void upperPlayerCollision(std::unique_ptr<Players> &player);
+    void upperPlayerCollision(Players *player);
 
-    void lowerPlayerCollision(std::unique_ptr<Players> &player);
+    void lowerPlayerCollision(Players *player);
 
     static CollisionHandler &getInstance();
 
-    void ballWindowCollision(std::unique_ptr<Ball> &ball);
+    void ballWindowCollision(Ball *ball);
 
-    void ballPlayersCollision(std::unique_ptr<Ball> &ball, std::unique_ptr<Players> &leftPlayer,
-                              std::unique_ptr<Players> &rightPlayer);
+    void ballPlayersCollision(Ball *ball, Players *leftPlayer, Players *rightPlayer);
 };

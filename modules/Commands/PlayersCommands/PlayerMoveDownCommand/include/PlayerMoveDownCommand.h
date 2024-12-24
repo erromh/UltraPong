@@ -17,5 +17,5 @@ class PlayerMoveDownCommand
 
     static PlayerMoveDownCommand *getInstance();
 
-    void execute(std::unique_ptr<Players> &player);
+    void execute(Players *player);
 };

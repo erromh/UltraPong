@@ -13,5 +13,5 @@ class PlayerMoveUpCommand : public Command
 
     static PlayerMoveUpCommand *getInstanse();
 
-    void execute(std::unique_ptr<Players> &player);
+    void execute(Players *player);
 };

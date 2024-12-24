@@ -7,6 +7,15 @@ enum WindowSize
     WINHEIGHT = 900
 };
 
+enum ExitWindowSize
+{
+    EXITWINWIDTH = (WINWIDTH / 2),
+    EXITWINHEIGHT = (WINHEIGHT / 2),
+
+    EXITWINXPOS = ((WINWIDTH / 2) - (EXITWINWIDTH / 2)),
+    EXITWINYPOS = ((WINHEIGHT / 2) - (EXITWINHEIGHT / 2))
+};
+
 enum BallData
 {
     BALLXCOORDINATE = (WINWIDTH / 2),

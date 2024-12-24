@@ -12,7 +12,7 @@ target_include_directories(Core
 target_link_libraries(Core
 	PUBLIC 
 		sfml-graphics 
-
+		ExitWindow
 		Players
 		Ball
 		PvPMode

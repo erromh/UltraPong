@@ -1,7 +1,7 @@
-#define ballPosition ball.get()->getPosition()
-#define ballShape ball.get()->getShape()
-#define leftplayerShape leftPlayer.get()->getPlayerShape()
-#define rightPlayerShape rightPlayer.get()->getPlayerShape()
+#define ballPosition ball->getPosition()
+#define ballShape ball->getShape()
+#define leftplayerShape leftPlayer->getPlayerShape()
+#define rightPlayerShape rightPlayer->getPlayerShape()
 
 #include "CollisionHandler.h"
 
@@ -15,7 +15,7 @@ CollisionHandler &CollisionHandler::getInstance()
     return instance;
 }
 
-void CollisionHandler::upperPlayerCollision(std::unique_ptr<Players> &player)
+void CollisionHandler::upperPlayerCollision(Players *player)
 {
     // Check for collision with upper boundary
 
@@ -25,7 +25,7 @@ void CollisionHandler::upperPlayerCollision(std::unique_ptr<Players> &player)
     }
 }
 
-void CollisionHandler::lowerPlayerCollision(std::unique_ptr<Players> &player)
+void CollisionHandler::lowerPlayerCollision(Players *player)
 {
     // Check for collision with lower boundary
 
@@ -35,33 +35,32 @@ void CollisionHandler::lowerPlayerCollision(std::unique_ptr<Players> &player)
     }
 }
 
-void CollisionHandler::ballWindowCollision(std::unique_ptr<Ball> &ball)
+void CollisionHandler::ballWindowCollision(Ball *ball)
 {
     // Check for collision with window bounbary
 
     if ((ballPosition.y + ballShape.getRadius()) >= WINHEIGHT || ballPosition.y <= 0)
     {
-        ball.get()->changeYDirection();
+        ball->changeYDirection();
     }
 
     if ((ballPosition.x + ballShape.getRadius()) >= WINWIDTH || ballPosition.x <= 0)
     {
-        ball.get()->changeXDirection();
+        ball->changeXDirection();
     }
 }
 
-void CollisionHandler::ballPlayersCollision(std::unique_ptr<Ball> &ball, std::unique_ptr<Players> &leftPlayer,
-                                            std::unique_ptr<Players> &rightPlayer)
+void CollisionHandler::ballPlayersCollision(Ball *ball, Players *leftPlayer, Players *rightPlayer)
 {
     // Check for collision with players
 
     if (leftplayerShape.getGlobalBounds().intersects(ballShape.getGlobalBounds()))
     {
-        ball.get()->changeXDirection();
+        ball->changeXDirection();
     }
 
     if (rightPlayerShape.getGlobalBounds().intersects(ballShape.getGlobalBounds()))
     {
-        ball.get()->changeXDirection();
+        ball->changeXDirection();
     }
 }
