@@ -1,10 +1,7 @@
 #include <SFML/Graphics.hpp>
 
-
 #include "GameController.h"
 #include "GlobalVaribles.h"
-
-// https://habr.com/ru/articles/710100/
 
 int main()
 {

@@ -101,7 +101,6 @@ void GameController::handleEvents(bool &needsRedraw)
                 switch (_menu->getSelectedMenuItem())
                 {
                 case 0:
-                    std::cout << "Case 0 is working ...\n";
                     _gameFactory->createGameMode(_gameMap[0]);
                     break;
 

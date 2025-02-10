@@ -17,7 +17,11 @@ class CollisionHandler
 
     static CollisionHandler &getInstance();
 
-    void ballWindowCollision(Ball *ball);
+    void ballWindowYCollision(Ball *ball);
+
+    int leftBallWindowCollision(Ball *ball);
+
+    int rightBallWindowCollision(Ball* ball);
 
     void ballPlayersCollision(Ball *ball, Players *leftPlayer, Players *rightPlayer);
 };

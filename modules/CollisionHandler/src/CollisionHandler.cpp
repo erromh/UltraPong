@@ -35,7 +35,7 @@ void CollisionHandler::lowerPlayerCollision(Players *player)
     }
 }
 
-void CollisionHandler::ballWindowCollision(Ball *ball)
+void CollisionHandler::ballWindowYCollision(Ball *ball)
 {
     // Check for collision with window bounbary
 
@@ -43,11 +43,30 @@ void CollisionHandler::ballWindowCollision(Ball *ball)
     {
         ball->changeYDirection();
     }
+}
 
-    if ((ballPosition.x + ballShape.getRadius()) >= WINWIDTH || ballPosition.x <= 0)
+int CollisionHandler::leftBallWindowCollision(Ball *ball)
+{
+    if (ballPosition.x <= 0)
     {
         ball->changeXDirection();
+
+        return 1;
     }
+
+    return 0;
+}
+
+int CollisionHandler::rightBallWindowCollision(Ball *ball)
+{
+    if ((ballPosition.x + ballShape.getRadius()) >= WINWIDTH)
+    {
+        ball->changeXDirection();
+
+        return 2;
+    }
+
+    return 0;
 }
 
 void CollisionHandler::ballPlayersCollision(Ball *ball, Players *leftPlayer, Players *rightPlayer)

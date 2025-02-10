@@ -57,8 +57,6 @@ void GameMenu::drawItems()
 
 void GameMenu::moveDown()
 {
-    std::cout << "moveDown() _menuSelect = " << _menuSelect << '\n';
-
     _menuSelect++;
 
     if (_menuSelect < 4)
@@ -76,8 +74,6 @@ void GameMenu::moveDown()
 
 void GameMenu::moveUp()
 {
-    std::cout << "moveUp() _menuSelect = " << _menuSelect << '\n';
-
     _menuSelect--;
 
     if (_menuSelect >= 0)

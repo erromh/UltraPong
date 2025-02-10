@@ -1,10 +1,19 @@
 #pragma once
-#include <SFML/Graphics.hpp>
 
 enum WindowSize
 {
     WINWIDTH = 1700,
     WINHEIGHT = 900
+};
+
+enum CountData
+{
+    COUNTCHARACTERSIZE = (WINHEIGHT / 8),
+
+    LEFTCOUNTXPOS = ((WINWIDTH / 3)),
+    RIGHTCOUNTXPOS = ((LEFTCOUNTXPOS * 2) - COUNTCHARACTERSIZE),
+
+    COUNTYPOS = (WINHEIGHT / 8)
 };
 
 enum ExitWindowSize

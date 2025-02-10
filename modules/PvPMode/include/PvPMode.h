@@ -31,6 +31,12 @@ class PvPMode : public GameStrategy
     int leftPlayerCount = 0;
     int rightPlayerCount = 0;
 
+    sf::Font _font;
+    std::string _fontPath = std::string(PROJECT_ROOT_DIR) + "/resources/Fonts/Minecraft.ttf";
+
+    sf::Text _rightPlayerCount;
+    sf::Text _leftPlayerCount;
+
   private:
     void handlePlayerMovement(const sf::Keyboard::Key downKey, const sf::Keyboard::Key upKey, Players *player);
 
@@ -47,6 +53,10 @@ class PvPMode : public GameStrategy
     void initializeEntity();
 
     void handleExeption(const std::exception &e);
+
+    int checkWinner();
+
+    void showExitWindow(sf::RenderWindow &window);
 
   public:
     PvPMode();

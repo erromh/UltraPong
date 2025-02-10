@@ -20,5 +20,6 @@ target_link_libraries(GameController
 
 		GameMenu
 		Command_Interface
+		ExitWindow
 )
 
