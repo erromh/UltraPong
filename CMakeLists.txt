@@ -2,6 +2,9 @@
 project (UltraPong LANGUAGES CXX)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
@@ -13,11 +16,9 @@ include(FetchContent)
 FetchContent_Declare(
     SFML
     GIT_REPOSITORY https://github.com/SFML/SFML.git
-    GIT_TAG 2.6.x
+    GIT_TAG 2.6.0
 )
 FetchContent_MakeAvailable(SFML)
-
-include_directories(${CMAKE_SOURCE_DIR}/global_var)
 
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
     message(STATUS "Shalom Linux")
@@ -26,17 +27,19 @@ elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
 else()
     message(STATUS "This is ${CMAKE_SYSTEM_NAME} speaking.")
 endif()
-   
-add_subdirectory(modules/Ball)
-add_subdirectory(modules/Players)
-add_subdirectory(modules/Commands)
-add_subdirectory(modules/Core)
-add_subdirectory(modules/PvPMode)
-add_subdirectory(modules/NetworkMode)
-add_subdirectory(modules/BotMode)
-add_subdirectory(modules/CollisionHandler)
-add_subdirectory(modules/ExitWindow)
+ 
+add_subdirectory(src)
+add_executable(UltraPong src/main.cpp)
 
-add_subdirectory(apps)
-
-# add_subdirectory(src)
+target_link_libraries(UltraPong 
+    PUBLIC 
+        sfml-system 
+        sfml-window 
+        sfml-graphics 
+        sfml-audio
+        
+        controllers
+        models
+        states
+        views
+)

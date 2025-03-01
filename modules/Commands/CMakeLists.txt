@@ -1,2 +1,0 @@
-add_subdirectory(PlayersCommands)
-add_subdirectory(Command_Interface)
