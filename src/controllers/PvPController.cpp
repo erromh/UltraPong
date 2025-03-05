@@ -6,16 +6,31 @@ PvPGame::PvPController::PvPController(PvPModel &model, PvPView &view) : _pvpMode
 
 void PvPGame::PvPController::handleInput(sf::RenderWindow &window)
 {
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
-    {
-        std::cout << "Enter was pressed in pvp controller\n";
-    }
 }
 
-void PvPGame::PvPController::update()
+void PvPGame::PvPController::update(float &deltaTime)
 {
     _pvpModel.updateBall();
-    _pvpModel.checkCollision();
+
+    _pvpModel.checkBallCollision();
+
+    _pvpModel.updatePaddles(deltaTime);
+
+    if ((_pvpModel._ball.getPosition().x + _pvpModel._ball.getRadius()) >= _pvpModel.getWindowDimension().x)
+    {
+        _pvpModel.increaseLeftScore();
+    }
+
+    if (_pvpModel._ball.getPosition().x <= 0)
+    {
+        _pvpModel.increaseRightScore();
+    }
+
+    if (_pvpModel.getLeftScore() == 2)
+    {
+        // call exit window
+        std::cout << "Left wins!\n";
+    }
 }
 
 void PvPGame::PvPController::draw(sf::RenderWindow &window)
@@ -29,12 +44,35 @@ void PvPGame::PvPController::handleEvent(sf::Event &event)
     {
         if (event.key.code == sf::Keyboard::W)
         {
-            _pvpModel._leftPaddle.move(0, -10);
+            _pvpModel.moveLeftPaddle(-1.f);
         }
 
         if (event.key.code == sf::Keyboard::S)
         {
-            _pvpModel._leftPaddle.move(0, 10);
+            _pvpModel.moveLeftPaddle(1.f);
+        }
+
+        if (event.key.code == sf::Keyboard::Up)
+        {
+            _pvpModel.moveRightPaddle(-1.f);
+        }
+
+        if (event.key.code == sf::Keyboard::Down)
+        {
+            _pvpModel.moveRightPaddle(1.f);
+        }
+    }
+
+    if (event.type == sf::Event::KeyReleased)
+    {
+        if (event.key.code == sf::Keyboard::W || event.key.code == sf::Keyboard::S)
+        {
+            _pvpModel.stopLeftPaddle();
+        }
+
+        if (event.key.code == sf::Keyboard::Up || event.key.code == sf::Keyboard::Down)
+        {
+            _pvpModel.stopRightPaddle();
         }
     }
 }

@@ -2,16 +2,18 @@
 #include "GameController.h"
 #include "PvPState.h"
 
+Menu::MenuController::MenuController(sf::RenderWindow &window) : _view(window)
+{
+}
+
 void Menu::MenuController::handleInput(sf::RenderWindow &window)
 {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
     {
         if (_model.getSelectedOption() == "PvP game")
         {
-            std::cout << "Enter was pressed in menu controller\n";
-
             Controllers::GameController::getInstance()->setState(
-                std::unique_ptr<GameState>(std::make_unique<PvPGame::PvPState>()));
+                std::unique_ptr<GameState>(std::make_unique<PvPGame::PvPState>(window)));
         }
         else if (_model.getSelectedOption() == "Exit")
         {

@@ -21,11 +21,13 @@ class MenuView
 
     bool _isResLoaded;
 
+    sf::Vector2u _windowSize;
+
   private:
     bool loadResources();
 
   public:
-    MenuView();
+    MenuView(sf::RenderWindow &window);
     void update(const MenuModel &model);
     void draw(sf::RenderWindow &window);
 };

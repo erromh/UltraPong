@@ -14,6 +14,7 @@ class MenuState : public GameState
     MenuController _menuController;
 
   public:
+    MenuState(sf::RenderWindow &window);
     void handleInput(sf::RenderWindow &window) override;
     void update(float deltaTime) override;
     void render(sf::RenderWindow &window) override;

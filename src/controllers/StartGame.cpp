@@ -29,7 +29,7 @@ void Start::StartGame::startingGame()
 
     window.setFramerateLimit(60);
 
-    Controllers::GameController::getInstance()->setState(std::make_unique<Menu::MenuState>());
+    Controllers::GameController::getInstance()->setState(std::make_unique<Menu::MenuState>(window));
 
     sf::Clock clock;
 

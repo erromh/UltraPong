@@ -14,6 +14,7 @@ class MenuController
     MenuView _view;
 
   public:
+    MenuController(sf::RenderWindow &window);
     void handleInput(sf::RenderWindow &window);
     void updateView();
     void draw(sf::RenderWindow &window);

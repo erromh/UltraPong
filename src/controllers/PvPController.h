@@ -15,7 +15,7 @@ class PvPController
   public:
     PvPController(PvPModel &model, PvPView &view);
     void handleInput(sf::RenderWindow &window);
-    void update();
+    void update(float &deltaTime);
     void draw(sf::RenderWindow &window);
     void handleEvent(sf::Event &event);
 };

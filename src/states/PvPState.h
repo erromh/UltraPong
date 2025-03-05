@@ -18,7 +18,7 @@ class PvPState : public GameState
     PvPModel _model;
 
   public:
-    PvPState();
+    PvPState(sf::RenderWindow &window);
     void handleInput(sf::RenderWindow &window) override;
     void update(float deltaTime) override;
     void render(sf::RenderWindow &window) override;
