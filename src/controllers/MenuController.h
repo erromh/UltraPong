@@ -19,6 +19,6 @@ class MenuController
     void updateView();
     void draw(sf::RenderWindow &window);
     void handleEvent(sf::Event &event);
-    std::string getSelectedOption() const;
+    // std::string getSelectedOption() const;
 };
 } // namespace Menu

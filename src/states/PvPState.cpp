@@ -5,6 +5,11 @@ PvPGame::PvPState::PvPState(sf::RenderWindow &window)
 {
 }
 
+PvPGame::PvPState::~PvPState()
+{
+    std::cout << "PvP state destroyed\n";
+}
+
 void PvPGame::PvPState::handleInput(sf::RenderWindow &window)
 {
     _controller.handleInput(window);
@@ -13,7 +18,6 @@ void PvPGame::PvPState::handleInput(sf::RenderWindow &window)
 void PvPGame::PvPState::update(float deltaTime)
 {
     _controller.update(deltaTime);
-
 
     _view.updateLeftScoreText();
     _view.updateRigthScoreText();

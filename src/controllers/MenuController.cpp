@@ -12,12 +12,18 @@ void Menu::MenuController::handleInput(sf::RenderWindow &window)
     {
         if (_model.getSelectedOption() == "PvP game")
         {
-            Controllers::GameController::getInstance()->setState(
-                std::unique_ptr<GameState>(std::make_unique<PvPGame::PvPState>(window)));
+            Controllers::GameController::getInstance()->setState(std::make_unique<PvPGame::PvPState>(window));
+        }
+        else if (_model.getSelectedOption() == "Bot game")
+        {
+            std::cout << "Bot mode is working\n";
+        }
+        else if (_model.getSelectedOption() == "Network mode")
+        {
+            std::cout << "Network is working\n";
         }
         else if (_model.getSelectedOption() == "Exit")
         {
-            std::cout << "Message before exit\n";
             window.close();
         }
     }
@@ -48,7 +54,7 @@ void Menu::MenuController::handleEvent(sf::Event &event)
     }
 }
 
-std::string Menu::MenuController::getSelectedOption() const
-{
-    return _model.getSelectedOption();
-}
+// std::string Menu::MenuController::getSelectedOption() const
+//{
+//     return _model.getSelectedOption();
+// }

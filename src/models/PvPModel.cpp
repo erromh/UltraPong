@@ -7,6 +7,7 @@ PvPGame::PvPModel::PvPModel(sf::RenderWindow &window)
 
     _leftVelocity = sf::Vector2f(0.f, 0.f);
     _rightVelocity = sf::Vector2f(0.f, 0.f);
+
     _paddleSpeed = window.getSize().y * 0.7f;
 
     _ball.setRadius(ballRadius);
@@ -48,11 +49,9 @@ void PvPGame::PvPModel::checkBallCollision()
     {
         _ballVelocity.x = -_ballVelocity.x;
     }
-
-    // fix it !!
 }
 
-void PvPGame::PvPModel::checkLeftCollision()
+void PvPGame::PvPModel::leftPaddleCollision()
 {
     if (_leftPaddle.getGlobalBounds().getPosition().y <= 0)
     {
@@ -60,9 +59,8 @@ void PvPGame::PvPModel::checkLeftCollision()
     }
 }
 
-void PvPGame::PvPModel::checkRightCollision()
+void PvPGame::PvPModel::rightPaddleCollision()
 {
-
 }
 
 void PvPGame::PvPModel::increaseRightScore()
@@ -72,16 +70,6 @@ void PvPGame::PvPModel::increaseRightScore()
 void PvPGame::PvPModel::increaseLeftScore()
 {
     _leftScore++;
-
-    // if (_leftScore == 3)
-    //{
-    //     // gameController( exitWindow(std::string playerName) )
-    //     std::cout << "Left wins\n";
-    // }
-    // else if (_rightScore == 3)
-    //{
-    //     std::cout << "Right wins\n";
-    // }
 }
 
 void PvPGame::PvPModel::moveLeftPaddle(float dir)

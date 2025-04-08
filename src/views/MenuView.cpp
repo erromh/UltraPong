@@ -29,7 +29,6 @@ void Menu::MenuView::update(const MenuModel &model)
 
     float titleCharacterSise = (_windowSize.y * 0.11f);
     float titleYPos = (_windowSize.y * 0.08f);
-
     float optionsCharacterSise = (_windowSize.y * 0.08f);
     float optionsXPos = (_windowSize.x * 0.09f);
     float optionsFirstYPos = (_windowSize.x / 6.8);

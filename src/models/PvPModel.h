@@ -28,8 +28,8 @@ class PvPModel
     void updateBall();
     void checkBallCollision();
 
-    void checkLeftCollision();
-    void checkRightCollision();
+    void leftPaddleCollision();
+    void rightPaddleCollision();
 
     int getLeftScore() const;
     int getRightScore() const;

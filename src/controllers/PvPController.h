@@ -1,8 +1,11 @@
 #pragma once
 #include <iostream>
 
+#include "GameController.h"
 #include "PvPModel.h"
 #include "PvPView.h"
+
+class State;
 
 namespace PvPGame
 {

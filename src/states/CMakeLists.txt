@@ -4,4 +4,11 @@ add_library(states ${STATES_SOURCES})
 
 target_include_directories(states PUBLIC ${CMAKE_SOURCE_DIR}/src/states)
 
-target_link_libraries(states PUBLIC sfml-graphics controllers)
+target_link_libraries(states 
+	PUBLIC 
+		sfml-graphics 
+		controllers
+	
+	 PRIVATE
+        Boost::system	
+)
